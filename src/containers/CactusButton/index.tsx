@@ -29,6 +29,6 @@ type CactusProps = {
 
 const Cactus = styled.img.attrs({ src: cactus })<CactusProps>`
   cursor: pointer;
-  width: ${({ nrOfClicks }) => 200 + nrOfClicks * 5}px;
-  height: ${({ nrOfClicks }) => 200 + nrOfClicks * 5}px;
+  width: ${({ nrOfClicks }) => 200 + nrOfClicks * 3}px;
+  height: ${({ nrOfClicks }) => 200 + nrOfClicks * 3}px;
 `;
