@@ -64,7 +64,7 @@ const stories: Story[] = [
   },
   {
     clicks: 260,
-    text: 'In fact, doing it for any kind of reward is kind of stupid as well.',
+    text: 'In fact, doing it for any kind of reward would be pretty dumb as well.',
   },
   {
     clicks: 290,

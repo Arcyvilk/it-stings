@@ -2,30 +2,27 @@ import styled, { keyframes } from 'styled-components';
 import { BaseAnimation } from './BaseAnimation';
 
 const bounceAnimation = keyframes`
-  from, 20%, 40%, 60%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-  0% {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
-  20% {
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-  40% {
-    transform: scale3d(.9, .9, .9);
-  }
-  60% {
-    opacity: 1;
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
-  80% {
-    transform: scale3d(.97, .97, .97);
-  }
-  to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
+  from {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1) translateY(+10%);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1) translateY(-10%);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1) translateY(+5%);
+    }
+    65% {
+      transform: scale3d(.95, 1.05, 1) translateY(-5%);
+    }
+    75% {
+      transform: scale3d(1.05, .95, 1) translateY(+2.5%);
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
 `;
 
 export const Bounce = styled(BaseAnimation)`
