@@ -19,7 +19,7 @@
     },
     "rules": {
         "quotes": [
-            "error",
+            "warn",
             "single"
         ],
         "eqeqeq": ["error", "always"],
