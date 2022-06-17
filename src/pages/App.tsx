@@ -11,11 +11,11 @@ export default function App(): JSX.Element {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/it-stings">
           <Main />
         </Route>
         <Route>
-          <Redirect to="/" />
+          <Redirect to="/it-stings" />
         </Route>
       </Switch>
     </Router>
