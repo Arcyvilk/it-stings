@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
+
 import { Flex } from 'components';
+import { CactusButton } from 'containers';
 import { Theme } from 'shared/theme';
 import { AppContext } from 'shared/context';
 
@@ -21,20 +23,12 @@ const MainWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
 `;
 
 export default function Main(): JSX.Element {
-  const { theme, themeType, setThemeType } = useContext(AppContext);
-  const onChangeThemeClick = () => {
-    if (themeType === 'light') {
-      setThemeType('dark');
-    } else {
-      setThemeType('light');
-    }
-  };
+  const { theme } = useContext(AppContext);
 
   return (
     <MainWrapper theme={theme}>
       <Flex column align justify>
-        <div>(((o(*ﾟ▽ﾟ*)o)))</div>
-        <button onClick={onChangeThemeClick}>Reverse theme</button>
+        <CactusButton />
       </Flex>
     </MainWrapper>
   );

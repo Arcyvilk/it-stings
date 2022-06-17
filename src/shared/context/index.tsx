@@ -13,7 +13,7 @@ type Props = {
 };
 
 const AppContextProvider = ({ children }: Props): JSX.Element => {
-  const defaultThemeType: ThemeType = 'light';
+  const defaultThemeType: ThemeType = 'dark';
   const [themeType, setThemeType] = useState<ThemeType>(defaultThemeType);
   const [theme, setTheme] = useState<Theme>(mainTheme[defaultThemeType]);
 

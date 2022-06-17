@@ -6,7 +6,6 @@ import {
   Redirect,
 } from 'react-router-dom';
 import Main from 'pages/Main';
-import NotFound from 'pages/NotFound';
 
 export default function App(): JSX.Element {
   return (
@@ -15,11 +14,8 @@ export default function App(): JSX.Element {
         <Route exact path="/">
           <Main />
         </Route>
-        <Route exact path="/404">
-          <NotFound />
-        </Route>
         <Route>
-          <Redirect to="/404" />
+          <Redirect to="/" />
         </Route>
       </Switch>
     </Router>
