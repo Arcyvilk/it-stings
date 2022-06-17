@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Flex } from 'components';
-import { CactusButton, CactusStory } from 'containers';
+import { CactusButton, CactusStory, StatusBar } from 'containers';
 import { Theme } from 'shared/theme';
 import { useAppContext } from 'shared/context';
+import { useHandleSaveGame } from 'hooks';
 
 const MainWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
   const style: React.CSSProperties = {
@@ -25,10 +26,12 @@ const MainWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
 
 export default function Main(): JSX.Element {
   const { theme } = useAppContext();
+  useHandleSaveGame();
 
   return (
     <MainWrapper theme={theme}>
       <Flex column align justify>
+        <StatusBar />
         <CactusButton />
         <CactusStory />
       </Flex>
