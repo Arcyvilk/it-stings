@@ -17,13 +17,17 @@ export const CactusButton = (): JSX.Element => {
 
   return (
     <Bounce duration={1}>
-      <Cactus onClick={incrementClicks} />
+      <Cactus nrOfClicks={nrOfClicks} onClick={incrementClicks} />
     </Bounce>
   );
 };
 
-const Cactus = styled.img.attrs({ src: cactus })`
+type CactusProps = {
+  nrOfClicks: number;
+};
+
+const Cactus = styled.img.attrs({ src: cactus })<CactusProps>`
   cursor: pointer;
-  width: 300px;
-  height: 300px;
+  width: ${({ nrOfClicks }) => 200 + nrOfClicks * 5}px;
+  height: ${({ nrOfClicks }) => 200 + nrOfClicks * 5}px;
 `;

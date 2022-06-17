@@ -20,6 +20,7 @@ const MainWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
   padding: 0;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
 
 export default function Main(): JSX.Element {
