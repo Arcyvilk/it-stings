@@ -1,23 +1,9 @@
-import { useMemo } from 'react';
-
-type Story = {
+export type Story = {
   clicks: number;
   text: string;
 };
 
-export const useStory = (): { getStory: (clicks: number) => string } => {
-  const sortedStories = useMemo(() => {
-    return stories.sort((a: Story, b: Story) => b.clicks - a.clicks);
-  }, [stories]);
-
-  const getStory = (clicks: number) => {
-    return sortedStories.find(entry => entry.clicks <= clicks)?.text ?? '';
-  };
-
-  return { getStory };
-};
-
-const stories: Story[] = [
+export const stories: Story[] = [
   {
     clicks: 1,
     text: 'You have decided to touch the cactus.',
@@ -32,11 +18,11 @@ const stories: Story[] = [
   },
   {
     clicks: 50,
-    text: 'The sharp pain in your finger does not stop you from touching the cactus over and over again. In fact, you touch it faster and faster.',
+    text: 'The sharp pain in your finger does not stop you from touching the cactus over and over again.',
   },
   {
     clicks: 75,
-    text: 'You start looking like a sieve.',
+    text: 'In fact, you touch it faster and faster.',
   },
   {
     clicks: 100,
@@ -97,5 +83,41 @@ const stories: Story[] = [
   {
     clicks: 500,
     text: 'Who am I kidding, who in their right mind would like to spend their time around a cactus toucher. You did that over five hundred times already, by the way.',
+  },
+  {
+    clicks: 530,
+    text: 'By the way, it seems that your masochistic tendencies cause the cactus to grow. It pretty much covers your entire screen already.',
+  },
+  {
+    clicks: 560,
+    text: 'Soon you wont be able to see the number of clicks anymore. It will ultimately remove any remaining reason to click anymore.',
+  },
+  {
+    clicks: 590,
+    text: 'What a cruel irony; a pointless activity recursively causing itself to be even more pointless. That would be sad if it was not so pointless.',
+  },
+  {
+    clicks: 620,
+    text: 'I pity you. I truly, truly, truly pity you.',
+  },
+  {
+    clicks: 650,
+    text: 'In fact, I pity you so badly that I think its a time to spice up your little activity a little bit.',
+  },
+  {
+    clicks: 680,
+    text: 'Here you go! A brand new thing to hurt yourself with.',
+  },
+  {
+    clicks: 710,
+    text: 'And it has much hugher density of spikes. Your masochistic heart must now be crying of joy.',
+  },
+  {
+    clicks: 740,
+    text: 'Or crying of pain. I dont judge.',
+  },
+  {
+    clicks: 770,
+    text: 'Actually I do judge, but thats besides the point.',
   },
 ];
