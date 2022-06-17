@@ -6,19 +6,19 @@ const bounceAnimation = keyframes`
       transform: scale3d(1, 1, 1);
     }
     30% {
-      transform: scale3d(1.25, 0.75, 1) translateY(+10%);
+      transform: scale3d(1.10, 0.90, 1) translateY(+5%);
     }
     40% {
-      transform: scale3d(0.75, 1.25, 1) translateY(-10%);
+      transform: scale3d(0.90, 1.10, 1) translateY(-5%);
     }
     50% {
-      transform: scale3d(1.15, 0.85, 1) translateY(+5%);
+      transform: scale3d(1.05, 0.95, 1) translateY(+2.5%);
     }
     65% {
-      transform: scale3d(.95, 1.05, 1) translateY(-5%);
+      transform: scale3d(0.95, 1.05, 1) translateY(-2.5%);
     }
     75% {
-      transform: scale3d(1.05, .95, 1) translateY(+2.5%);
+      transform: scale3d(1.02, .98, 1) translateY(+1%);
     }
     to {
       transform: scale3d(1, 1, 1);
