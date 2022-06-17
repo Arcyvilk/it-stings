@@ -9,7 +9,7 @@ export const CactusStory = (): JSX.Element => {
   const { getStory } = useStory();
 
   const currentStory = useMemo(() => {
-    return getStory(clicks);
+    return getStory();
   }, [clicks]);
 
   if (currentStory) {

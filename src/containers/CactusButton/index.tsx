@@ -4,31 +4,39 @@ import styled from 'styled-components';
 import { useAppContext } from 'shared/context';
 import { Bounce } from 'components';
 import { getOuch } from 'assets/sounds/ouch';
-import cactus from 'assets/images/cacti/cactus_golden.png';
+import { useClickable } from 'story';
 
 export const CactusButton = (): JSX.Element => {
   const { clicks, setClicks } = useAppContext();
+  const { getClickable } = useClickable();
+
+  const clickable = getClickable();
 
   const incrementClicks = () => {
     setClicks(clicks + 1);
-    const ouch = getOuch();
-    const audio = new Audio(ouch);
-    audio.play();
+    if (!clickable.mute) {
+      const ouch = getOuch();
+      const audio = new Audio(ouch);
+      audio.play();
+    }
   };
 
   return (
     <Bounce duration={1}>
-      <Cactus nrOfClicks={clicks} onClick={incrementClicks} />
+      <Cactus
+        src={clickable.src}
+        width={clickable.width}
+        onClick={incrementClicks}
+      />
     </Bounce>
   );
 };
 
 type CactusProps = {
-  nrOfClicks: number;
+  width: number;
 };
 
-const Cactus = styled.img.attrs({ src: cactus })<CactusProps>`
+const Cactus = styled.img<CactusProps>`
   cursor: pointer;
-  width: ${({ nrOfClicks }) => 200 + nrOfClicks * 3}px;
-  height: ${({ nrOfClicks }) => 200 + nrOfClicks * 3}px;
+  width: ${({ width }) => width}px;
 `;

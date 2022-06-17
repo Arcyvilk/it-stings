@@ -1,12 +1,18 @@
 import { useMemo } from 'react';
+
+import { useAppContext } from 'shared/context';
 import { Story, stories } from './story';
 
-export const useStory = (): { getStory: (clicks: number) => string } => {
+type UseStory = { getStory: () => string };
+
+export const useStory = (): UseStory => {
+  const { clicks } = useAppContext();
+
   const sortedStories = useMemo(() => {
     return stories.sort((a: Story, b: Story) => b.clicks - a.clicks);
   }, [stories]);
 
-  const getStory = (clicks: number) => {
+  const getStory = () => {
     return sortedStories.find(entry => entry.clicks <= clicks)?.text ?? '';
   };
 
