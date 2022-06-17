@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { Flex } from 'components';
-import { CactusButton } from 'containers';
+import { CactusButton, CactusStory } from 'containers';
 import { Theme } from 'shared/theme';
-import { AppContext } from 'shared/context';
+import { useAppContext } from 'shared/context';
 
 const MainWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
   const style: React.CSSProperties = {
@@ -24,12 +24,13 @@ const MainWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
 `;
 
 export default function Main(): JSX.Element {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <MainWrapper theme={theme}>
       <Flex column align justify>
         <CactusButton />
+        <CactusStory />
       </Flex>
     </MainWrapper>
   );

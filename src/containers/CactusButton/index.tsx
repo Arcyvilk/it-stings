@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
+import { useAppContext } from 'shared/context';
 import { Bounce } from 'components';
 import { getOuch } from 'assets/sounds/ouch';
 import cactus from 'assets/images/cacti/cactus_golden.png';
 
 export const CactusButton = (): JSX.Element => {
-  const [nrOfClicks, setNrOfClicks] = useState<number>(0);
+  const { clicks, setClicks } = useAppContext();
 
   const incrementClicks = () => {
-    setNrOfClicks(nrOfClicks + 1);
+    setClicks(clicks + 1);
     const ouch = getOuch();
     const audio = new Audio(ouch);
     audio.play();
@@ -17,7 +18,7 @@ export const CactusButton = (): JSX.Element => {
 
   return (
     <Bounce duration={1}>
-      <Cactus nrOfClicks={nrOfClicks} onClick={incrementClicks} />
+      <Cactus nrOfClicks={clicks} onClick={incrementClicks} />
     </Bounce>
   );
 };
