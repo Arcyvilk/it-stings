@@ -4,7 +4,7 @@ import { useAppContext } from 'shared/context';
 
 const defaultSave = { clicks: 0 };
 
-export const useHandleSaveGame = (): any => {
+export const useHandleSaveGame = (): void => {
   const { clicks, setClicks } = useAppContext();
   const [savedGame, setSaveGame] = useLocalStorage(
     'itstings/save',

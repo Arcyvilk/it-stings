@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react';
 
 type LocalStorage = [any, (lsValue: any) => void];
 
 export const useLocalStorage = (
   keyName: string,
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   defaultValue?: any,
 ): LocalStorage => {
   const [storedLSValue, setStoredLSValue] = useState(() => {
@@ -25,7 +27,7 @@ export const useLocalStorage = (
     try {
       window.localStorage.setItem(keyName, JSON.stringify(newValue));
     } catch (err) {
-      console.log(err);
+      /** */
     }
     setStoredLSValue(newValue);
   };
