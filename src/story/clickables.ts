@@ -8,6 +8,7 @@ import happyCat from 'assets/images/cacti/happyCat.png';
 import angryCat from 'assets/images/cacti/angryCat.png';
 
 export type Clickable = {
+  id: string;
   clicks: number;
   src: string;
   minSize: number;
@@ -17,53 +18,68 @@ export type Clickable = {
 
 export const clickables: Clickable[] = [
   {
+    id: 'cactus_golden',
     clicks: 0,
     src: goldenCactus,
-    minSize: 200,
-    growth: 3,
+    minSize: 100,
+    growth: 1.5,
   },
   {
+    id: 'hedgehog',
     clicks: 680,
     src: hedgehog,
-    minSize: 200,
-    growth: 3,
+    minSize: 100,
+    growth: 1.5,
   },
   {
+    id: 'barbed_wire',
     clicks: 1150,
     src: barbedWire,
-    minSize: 200,
-    growth: 5,
-  },
-  {
-    clicks: 1530,
-    src: razorWire,
-    minSize: 200,
-    growth: 7,
-  },
-  {
-    clicks: 1740,
-    src: seaUrchin,
-    minSize: 200,
+    minSize: 100,
     growth: 2,
   },
   {
+    id: 'razor_wire',
+    clicks: 1530,
+    src: razorWire,
+    minSize: 100,
+    growth: 3,
+  },
+  {
+    id: 'sea_urchin',
+    clicks: 1740,
+    src: seaUrchin,
+    minSize: 100,
+    growth: 1.5,
+  },
+  {
+    id: 'teddy_bear',
     clicks: 2120,
     src: teddyBear,
-    minSize: 200,
+    minSize: 100,
     growth: 0,
     mute: true,
   },
   {
+    id: 'happy_cat',
     clicks: 2270,
     src: happyCat,
-    minSize: 200,
+    minSize: 100,
     growth: 0,
     mute: true,
   },
   {
+    id: 'angry_cat',
     clicks: 2420,
     src: angryCat,
-    minSize: 200,
-    growth: 20,
+    minSize: 100,
+    growth: 5,
+  },
+  {
+    id: 'cactus_golden_2',
+    clicks: 2530,
+    src: goldenCactus,
+    minSize: 100,
+    growth: 1.5,
   },
 ];
