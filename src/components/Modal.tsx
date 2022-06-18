@@ -20,7 +20,7 @@ export const Modal = (props: Props): JSX.Element => {
   };
 
   const disablePropagation = (event: React.MouseEvent<HTMLDivElement>) => {
-    event.stopPropagation();
+    event.preventDefault();
   };
 
   return (
@@ -49,9 +49,9 @@ const ModalWrapper = styled.div.attrs(
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* padding: 24px; */
+  padding: 24px;
   box-sizing: border-box;
-  background-color: #00000033;
+  background-color: #00000088;
   z-index: ${ZINDEX.MODAL};
 `;
 
@@ -60,8 +60,8 @@ const StyledModal = styled.div.attrs(({ theme }: { theme: Theme }) => {
     style: { backgroundColor: theme.primaryBg, color: theme.primaryText },
   };
 })<{ theme: Theme }>`
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   padding: 8px;
   box-sizing: border-box;
 `;
