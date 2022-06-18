@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 import { useStoryModeContext } from 'shared/context';
 import { Bounce } from 'components';
 import { getOuch } from 'assets/sounds/ouch';
-import { useClickable } from 'story';
+import { useAchievements, useClickables } from 'story';
 
 export const CactusButton = (): JSX.Element => {
   const { clicks, setClicks } = useStoryModeContext();
-  const { getClickable } = useClickable();
+  const { getClickable } = useClickables();
+  const { unlockAchievement } = useAchievements();
 
   const clickable = getClickable();
+
+  useEffect(() => {
+    unlockAchievement();
+  }, [clicks]);
 
   const onTouchableClick = () => {
     setClicks(clicks + 1);
