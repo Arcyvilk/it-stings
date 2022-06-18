@@ -1,7 +1,8 @@
 import { useCallback, useMemo } from 'react';
-import { useLocalStorage } from 'hooks/useLocalStorage';
 
+import { useLocalStorage } from 'hooks/useLocalStorage';
 import { useStoryModeContext } from 'shared/context';
+import { useAchievementNotification } from 'containers';
 import { Achievement, achievements } from './achievements';
 
 type UseAchievement = {
@@ -12,6 +13,7 @@ type UseAchievement = {
 
 export const useAchievements = (): UseAchievement => {
   const { clicks } = useStoryModeContext();
+  const { showAchievementNotification } = useAchievementNotification();
   const [unlockedAchievements, setUnlockedAchievements] = useLocalStorage(
     'itstings/achievements',
     [],
@@ -31,6 +33,7 @@ export const useAchievements = (): UseAchievement => {
     const newAchievement = getAchievement();
     if (newAchievement && !unlockedAchievements.includes(newAchievement.id)) {
       setUnlockedAchievements([...unlockedAchievements, newAchievement.id]);
+      showAchievementNotification(newAchievement);
     }
   }, [clicks]);
 
