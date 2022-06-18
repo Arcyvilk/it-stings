@@ -2,31 +2,36 @@ import { useMemo } from 'react';
 
 import { useStoryModeContext } from 'shared/context';
 import { Clickable, clickables } from './clickables';
+import { defaultClickable } from '.';
 
 type UseClickables = {
-  getClickable: () => { src: string; mute: boolean; width: number };
+  setClickable: () => void;
 };
 
 export const useClickables = (): UseClickables => {
-  const { clicks } = useStoryModeContext();
+  const { clicks, activeClickable, setActiveClickable } = useStoryModeContext();
 
   const sortedClickables = useMemo(() => {
     return clickables.sort((a: Clickable, b: Clickable) => b.clicks - a.clicks);
   }, [clickables]);
 
-  const getClickable = () => {
+  const setClickable = () => {
     const clickable = sortedClickables.find(entry => entry.clicks <= clicks);
-    if (!clickable) {
-      return { src: '', mute: false, width: 0 };
+    if (activeClickable) {
+      if (!clickable) {
+        setActiveClickable(defaultClickable);
+      } else {
+        setActiveClickable({
+          id: clickable?.id,
+          src: clickable?.src,
+          mute: !!clickable?.mute,
+          width:
+            clickable.minSize +
+            (clicks - clickable?.clicks) * clickable?.growth,
+        });
+      }
     }
-
-    return {
-      src: clickable?.src,
-      mute: !!clickable?.mute,
-      width:
-        clickable.minSize + (clicks - clickable?.clicks) * clickable?.growth,
-    };
   };
 
-  return { getClickable };
+  return { setClickable };
 };

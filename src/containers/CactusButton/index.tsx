@@ -7,19 +7,18 @@ import { getOuch } from 'assets/sounds/ouch';
 import { useAchievements, useClickables } from 'data';
 
 export const CactusButton = (): JSX.Element => {
-  const { clicks, setClicks } = useStoryModeContext();
-  const { getClickable } = useClickables();
+  const { clicks, setClicks, activeClickable } = useStoryModeContext();
   const { unlockAchievement } = useAchievements();
-
-  const clickable = getClickable();
+  const { setClickable } = useClickables();
 
   useEffect(() => {
+    setClickable();
     unlockAchievement();
   }, [clicks]);
 
   const onTouchableClick = () => {
     setClicks(clicks + 1);
-    if (!clickable.mute) {
+    if (!activeClickable.mute) {
       const ouch = getOuch();
       const audio = new Audio(ouch);
       audio.play();
@@ -29,8 +28,8 @@ export const CactusButton = (): JSX.Element => {
   return (
     <Bounce duration={1}>
       <Cactus
-        src={clickable.src}
-        width={clickable.width}
+        src={activeClickable.src}
+        width={activeClickable.width}
         onClick={onTouchableClick}
       />
     </Bounce>

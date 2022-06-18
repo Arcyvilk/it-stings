@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
-
-type ActiveClickable = { src: string; mute: boolean; width: number };
+import { defaultClickable, ActiveClickable } from 'data/clickables';
 
 type StoryModeContextType = {
   clicks: number;
@@ -11,8 +10,6 @@ type StoryModeContextType = {
 type Props = {
   children: React.ReactNode;
 };
-
-const defaultClickable: ActiveClickable = { src: '', mute: false, width: 1 };
 
 export const StoryModeContextProvider = ({ children }: Props): JSX.Element => {
   const [clicks, setClicks] = useState<number>(0);
