@@ -22,9 +22,10 @@ const Story = styled.div`
   position: absolute;
   width: 100%;
   bottom: 0;
-  padding: 20px 32px;
+  padding: 12px 20px;
   box-sizing: border-box;
-  background-color: black;
-  font-size: 1.5em;
+  background-color: #000000bb;
+  font-size: 1.4em;
   text-align: center;
+  line-height: 1.4em;
 `;

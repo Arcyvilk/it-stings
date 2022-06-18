@@ -36,7 +36,8 @@ type CactusProps = {
   width: number;
 };
 
-const Cactus = styled.img<CactusProps>`
+const Cactus = styled.img.attrs(({ width }) => {
+  return { style: { width } };
+})<CactusProps>`
   cursor: pointer;
-  width: ${({ width }) => width}px;
 `;
