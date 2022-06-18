@@ -5,7 +5,6 @@ import { faTrophy } from '@fortawesome/free-solid-svg-icons';
 
 import { Flex } from 'components';
 import { Achievement } from 'data';
-import { useAppContext } from 'shared/context';
 
 type Props = {
   achievement: Achievement;
@@ -31,14 +30,8 @@ type UseAchievementNotification = {
 };
 
 export const useAchievementNotification = (): UseAchievementNotification => {
-  const { themeType } = useAppContext();
-
   const showAchievementNotification = (achievement: Achievement) =>
     toast.success(<AchievementNotification achievement={achievement} />, {
-      theme: themeType,
-      autoClose: 3000,
-      hideProgressBar: false,
-      pauseOnFocusLoss: false,
       icon: false,
     });
 
