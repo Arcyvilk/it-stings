@@ -7,6 +7,21 @@ import { Theme } from 'shared/theme';
 import { useAppContext } from 'shared/context';
 import { useHandleSaveGame } from 'hooks';
 
+export default function StoryMode(): JSX.Element {
+  const { theme } = useAppContext();
+  useHandleSaveGame();
+
+  return (
+    <MainWrapper theme={theme}>
+      <Flex column align justify>
+        <StatusBar />
+        <CactusButton />
+        <CactusStory />
+      </Flex>
+    </MainWrapper>
+  );
+}
+
 const MainWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
   const style: React.CSSProperties = {
     color: theme.primaryText,
@@ -23,18 +38,3 @@ const MainWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
   align-items: center;
   overflow: hidden;
 `;
-
-export default function Main(): JSX.Element {
-  const { theme } = useAppContext();
-  useHandleSaveGame();
-
-  return (
-    <MainWrapper theme={theme}>
-      <Flex column align justify>
-        <StatusBar />
-        <CactusButton />
-        <CactusStory />
-      </Flex>
-    </MainWrapper>
-  );
-}

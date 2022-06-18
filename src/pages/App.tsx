@@ -5,14 +5,14 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import Main from 'pages/Main';
+import StoryMode from 'pages/StoryMode';
 
 export default function App(): JSX.Element {
   return (
     <Router>
       <Switch>
         <Route exact path="/it-stings">
-          <Main />
+          <StoryMode />
         </Route>
         <Route>
           <Redirect to="/it-stings" />
