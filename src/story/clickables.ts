@@ -9,6 +9,8 @@ import angryCat from 'assets/images/cacti/angryCat.png';
 
 export type Clickable = {
   id: string;
+  name: string;
+  description: string;
   clicks: number;
   src: string;
   minSize: number;
@@ -19,6 +21,8 @@ export type Clickable = {
 export const clickables: Clickable[] = [
   {
     id: 'cactus_golden',
+    name: 'Golden Cactus',
+    description: 'A golden cactus',
     clicks: 0,
     src: goldenCactus,
     minSize: 100,
@@ -26,6 +30,8 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'hedgehog',
+    name: 'Hedgehog',
+    description: 'A cute specimen of the Erinaceus Europaeus',
     clicks: 680,
     src: hedgehog,
     minSize: 100,
@@ -33,6 +39,8 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'barbed_wire',
+    name: 'Barbed wire',
+    description: 'A shiny roll of pure suffering',
     clicks: 1150,
     src: barbedWire,
     minSize: 100,
@@ -40,6 +48,9 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'razor_wire',
+    name: 'Razor wire',
+    // eslint-disable-next-line prettier/prettier
+    description: 'If you thought the barbed wire wasn\'t extreme enough',
     clicks: 1530,
     src: razorWire,
     minSize: 100,
@@ -47,6 +58,8 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'sea_urchin',
+    name: 'Sea urchin',
+    description: 'A spiny, globular echinoderm',
     clicks: 1740,
     src: seaUrchin,
     minSize: 100,
@@ -54,6 +67,8 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'teddy_bear',
+    name: 'Teddy bear',
+    description: 'A golden cactus.',
     clicks: 2120,
     src: teddyBear,
     minSize: 100,
@@ -62,6 +77,8 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'happy_cat',
+    name: 'Harry',
+    description: 'Friendly orange tomcat',
     clicks: 2270,
     src: happyCat,
     minSize: 100,
@@ -70,6 +87,9 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'angry_cat',
+    name: 'Angry Harry',
+    description:
+      'Friendly orange tomcat stops being friendly if he gets poked one time too much',
     clicks: 2420,
     src: angryCat,
     minSize: 100,
@@ -77,6 +97,9 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'cactus_golden_2',
+    name: 'Golden Cactus',
+    // eslint-disable-next-line prettier/prettier
+    description: 'Wait, I\'ve already seen this one before...',
     clicks: 2530,
     src: goldenCactus,
     minSize: 100,
