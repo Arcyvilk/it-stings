@@ -385,9 +385,4 @@ export const stories: Story[] = [
     clicks: 2500,
     text: 'MEEEEEEEEEEEEEOOOOOOOOOOOW',
   },
-  {
-    clicks: 2530,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Okay, that\'s enough. Back to the cactus we go.',
-  },
 ];
