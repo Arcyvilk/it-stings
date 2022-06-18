@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useStoryModeContext } from 'shared/context';
 import { Bounce } from 'components';
 import { getOuch } from 'assets/sounds/ouch';
-import { useAchievements, useClickables } from 'story';
+import { useAchievements, useClickables } from 'data';
 
 export const CactusButton = (): JSX.Element => {
   const { clicks, setClicks } = useStoryModeContext();

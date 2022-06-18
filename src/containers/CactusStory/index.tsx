@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import styled from 'styled-components';
 
 import { useStoryModeContext } from 'shared/context';
-import { useStory } from 'story';
+import { useStory } from 'data';
 
 export const CactusStory = (): JSX.Element => {
   const { clicks } = useStoryModeContext();
