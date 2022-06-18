@@ -10,16 +10,17 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 export const StatusBar = (): JSX.Element => {
-  const { clicks, setClicks } = useStoryModeContext();
+  const { clicks, setClicks, setShowAchievementsList, setShowClickablesList } =
+    useStoryModeContext();
 
   const onShowAchievements = () => {
-    alert('Achievements page is not implemented yet');
+    setShowAchievementsList(true);
   };
   const onShowClickables = () => {
-    alert('Clickables page is not implemented yet');
+    setShowClickablesList(true);
   };
   const onRestart = () => {
-    setClicks(1);
+    setClicks(0);
   };
 
   return (
