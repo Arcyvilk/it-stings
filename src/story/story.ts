@@ -22,11 +22,11 @@ export const stories: Story[] = [
   },
   {
     clicks: 75,
-    text: 'In fact, you touch it faster and faster.',
+    text: 'In fact, you touch it faster. And faster. And faster.',
   },
   {
     clicks: 100,
-    text: 'And here we are, one hundred puncture wounds on your hand later.',
+    text: '...and here we are, one hundred puncture wounds on your hand later.',
   },
   {
     clicks: 130,
@@ -38,7 +38,8 @@ export const stories: Story[] = [
   },
   {
     clicks: 180,
-    text: 'No, you wont get a medal for this.',
+    // eslint-disable-next-line prettier/prettier
+    text: 'No, you won\'t get a medal for this.',
   },
   {
     clicks: 200,
@@ -58,11 +59,11 @@ export const stories: Story[] = [
   },
   {
     clicks: 320,
-    text: 'It kiiiind of revolves around not making a fool out of yourself, for example by stabbing yourself repeadedly with a god forsaken cactus.',
+    text: 'It kiiiind of revolves around not making a fool out of yourself, for example by stabbing yourself repeatedly with a god-forsaken cactus.',
   },
   {
     clicks: 350,
-    text: 'Och, did that example sound... oddly specific? Good. It was supposed to.',
+    text: 'Oh, did that example sound... oddly specific? Good. It was supposed to.',
   },
   {
     clicks: 380,
@@ -93,7 +94,7 @@ export const stories: Story[] = [
   {
     clicks: 560,
     // eslint-disable-next-line prettier/prettier
-    text: 'Soon you won\'t be able to see the number of clicks anymore. It will ultimately remove any remaining reason to click anymore.',
+    text: 'Soon you won\'t be able to see the number of clicks anymore. It will ultimately remove any remaining reason to click.',
   },
   {
     clicks: 590,
@@ -106,7 +107,7 @@ export const stories: Story[] = [
   {
     clicks: 650,
     // eslint-disable-next-line prettier/prettier
-    text: 'In fact, I pity you so badly that I think it\'s time to spice up your little activity a little bit.',
+    text: 'In fact, I pity you so much that I think it\'s time to spice up your little activity a little bit.',
   },
   {
     clicks: 680,
@@ -114,7 +115,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 710,
-    text: 'And it has much hugher density of spikes. Your masochistic heart must now be crying of joy.',
+    text: 'And it has much higher density of spikes. Your masochistic heart must now be crying of joy.',
   },
   {
     clicks: 740,
@@ -237,7 +238,7 @@ export const stories: Story[] = [
   {
     clicks: 1560,
     // eslint-disable-next-line prettier/prettier
-    text: 'Now don\t let it fool you: it\'s not as dense as the roll of barbed wire, but still as deadly.',
+    text: 'Now don\'t let it fool you: it\'s not as dense as the roll of barbed wire, but still as deadly.',
   },
   {
     clicks: 1590,
@@ -251,7 +252,7 @@ export const stories: Story[] = [
   {
     clicks: 1650,
     // eslint-disable-next-line prettier/prettier
-    text: 'Dunno about you, but I don\'t fancy unresponsibly spawning gigantic pain devices. It does not seem very responsible.',
+    text: 'Dunno about you, but I don\'t fancy happily spawning gigantic pain devices. It does not seem very responsible.',
   },
   {
     clicks: 1680,
@@ -260,7 +261,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 1710,
-    text: 'Since you are obviously incapable of taking responsible adult decisions, it seems like I have to do it for you.',
+    text: 'Since you are obviously incapable of taking responsible adult decisions, it seems like I have to do it myself.',
   },
   {
     clicks: 1740,
@@ -269,11 +270,11 @@ export const stories: Story[] = [
   {
     clicks: 1770,
     // eslint-disable-next-line prettier/prettier
-    text: 'Hmm... Nope, this won\'t do.',
+    text: 'Hmm... Nope, this won\'t do...',
   },
   {
     clicks: 1800,
-    text: 'This porcupine does not look like it wants to have anything to do with you.',
+    text: '...this porcupine does not look like it wants to have anything to do with you...',
   },
   {
     clicks: 1830,
@@ -288,12 +289,12 @@ export const stories: Story[] = [
   {
     clicks: 1890,
     // eslint-disable-next-line prettier/prettier
-    text: 'We would be absolutely filthy rich, given how much you enjoy poking stuff with your fingers. We would become decillionarres.',
+    text: 'We would be absolutely filthy rich, given how much you enjoy poking stuff with your fingers. We would become decillionaries.',
   },
   {
     clicks: 1910,
     // eslint-disable-next-line prettier/prettier
-    text: 'I\'m not even sure if "decillionarre" is an actual word. I don\'t think anyone has amassed this amount of wealth, ever, so there isn\'t even a legit word for that.',
+    text: 'I\'m not even sure if "decillionare" is an actual word. I don\'t think anyone has amassed this amount of wealth, ever, so there isn\'t even a legit word for that.',
   },
   {
     clicks: 1940,
@@ -308,7 +309,7 @@ export const stories: Story[] = [
   {
     clicks: 2000,
     // eslint-disable-next-line prettier/prettier
-    text: 'A small digression: you already touched items I gave you two thousand times. Now imagine you were turning things gold instead, for goddamn\'s sake.',
+    text: 'A small digression: you already touched items I gave you two thousand times. Now imagine you were turning things to gold instead, for goddamn\'s sake.',
   },
   {
     clicks: 2030,
@@ -321,7 +322,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 2090,
-    text: 'If you expected a dirty joke here, I have to disappoint you. Just like you are a disappointment to your parents.',
+    text: '...if you expected a dirty joke here, I have to disappoint you. Just like you are a disappointment to your parents.',
   },
   {
     clicks: 2120,
@@ -352,12 +353,12 @@ export const stories: Story[] = [
   {
     clicks: 2300,
     // eslint-disable-next-line prettier/prettier
-    text: 'This is Ginger. He\'s a very nice kitty. You are allowed to pet him. For science.',
+    text: 'This is Harry. He\'s a very nice kitty. You are allowed to pet him. For science.',
   },
   {
     clicks: 2330,
     // eslint-disable-next-line prettier/prettier
-    text: '...this is not really how you pet a cat. Petting a cat is done via gentle strokes in direction from head towards tail, alongside spine. What you\'re doing is poking a cat.',
+    text: '...this is... not how you pet a cat. Petting a cat is done via gentle strokes in direction from head towards tail, alongside spine. What you\'re doing is "poking a cat".',
   },
   {
     clicks: 2360,
@@ -369,7 +370,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 2420,
-    text: '...aaaand he got angry',
+    text: '...aaaand you made Harry angry.',
   },
   {
     clicks: 2450,
@@ -382,6 +383,11 @@ export const stories: Story[] = [
   },
   {
     clicks: 2500,
-    text: 'MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEOOOOOOOOOOOOOOOOOOOOOOOOOOW',
+    text: 'MEEEEEEEEEEEEEOOOOOOOOOOOW',
+  },
+  {
+    clicks: 2530,
+    // eslint-disable-next-line prettier/prettier
+    text: 'Okay, that\'s enough. Back to the cactus we go.',
   },
 ];
