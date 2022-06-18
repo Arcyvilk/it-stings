@@ -8,8 +8,8 @@ import { useAchievements, useClickables } from 'data';
 
 export const CactusButton = (): JSX.Element => {
   const { clicks, setClicks, activeClickable } = useStoryModeContext();
+  const { setClickable, MAX_CLICKS } = useClickables();
   const { unlockAchievement } = useAchievements();
-  const { setClickable } = useClickables();
 
   useEffect(() => {
     setClickable();
@@ -17,6 +17,10 @@ export const CactusButton = (): JSX.Element => {
   }, [clicks]);
 
   const onTouchableClick = () => {
+    if (clicks >= MAX_CLICKS) {
+      setClicks(MAX_CLICKS);
+      return;
+    }
     setClicks(clicks + 1);
     if (!activeClickable.mute) {
       const ouch = getOuch();
