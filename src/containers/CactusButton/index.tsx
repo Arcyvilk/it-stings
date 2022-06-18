@@ -4,11 +4,13 @@ import styled from 'styled-components';
 import { useStoryModeContext } from 'shared/context';
 import { Bounce } from 'components';
 import { getOuch } from 'assets/sounds/ouch';
-import { useAchievements, useClickables } from 'data';
+import { useStory, useAchievements, useClickables } from 'data';
+import { toast } from 'react-toastify';
 
 export const CactusButton = (): JSX.Element => {
   const { clicks, setClicks, activeClickable } = useStoryModeContext();
-  const { setClickable, MAX_CLICKS } = useClickables();
+  const { MAX_CLICKS } = useStory();
+  const { setClickable } = useClickables();
   const { unlockAchievement } = useAchievements();
 
   useEffect(() => {
@@ -19,6 +21,9 @@ export const CactusButton = (): JSX.Element => {
   const onTouchableClick = () => {
     if (clicks >= MAX_CLICKS) {
       setClicks(MAX_CLICKS);
+      toast.warning(
+        'You have reached the end of story mode. Further clicking will not do anything for now. Stay tuned for the updates!',
+      );
       return;
     }
     setClicks(clicks + 1);

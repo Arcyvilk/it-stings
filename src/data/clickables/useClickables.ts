@@ -7,7 +7,6 @@ import { defaultClickable } from '.';
 
 type UseClickables = {
   setClickable: () => void;
-  MAX_CLICKS: number;
 };
 
 export const useClickables = (): UseClickables => {
@@ -20,8 +19,6 @@ export const useClickables = (): UseClickables => {
   const sortedClickables = useMemo(() => {
     return clickables.sort((a: Clickable, b: Clickable) => b.clicks - a.clicks);
   }, [clickables]);
-
-  const MAX_CLICKS = sortedClickables[0].clicks;
 
   const unlockClickable = useCallback(
     (id: string) => {
@@ -48,5 +45,5 @@ export const useClickables = (): UseClickables => {
     }
   };
 
-  return { setClickable, MAX_CLICKS };
+  return { setClickable };
 };
