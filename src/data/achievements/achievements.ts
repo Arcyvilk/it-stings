@@ -24,14 +24,16 @@ export const achievements: Achievement[] = [
   {
     id: 'five_hundred_touches',
     name: 'Masochism',
-    description: 'You punctured yourself 500 times.',
+    // eslint-disable-next-line prettier/prettier
+    description: 'You really DO enjoy stinging yourself, don\'t you.',
     clicks: 500,
     img: '',
   },
   {
     id: 'one_thousand_touches',
-    name: 'Determination',
-    description: 'You punctured yourself 1000 times.',
+    name: 'Death of thousand stings',
+    description:
+      'Your self-inflicted torture achieves levels unknown to mankind.',
     clicks: 1000,
     img: '',
   },
