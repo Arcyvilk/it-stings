@@ -21,6 +21,10 @@ export const Title = (props: Props): JSX.Element => {
 };
 
 const Wrapper = styled.div`
+  & > * {
+    margin: 0;
+    padding: 0;
+  }
   h1 {
   }
   h2 {
