@@ -7,11 +7,12 @@ import { defaultClickable } from '.';
 
 type UseClickables = {
   setClickable: () => void;
+  unlockedClickables: Clickable[];
 };
 
 export const useClickables = (): UseClickables => {
   const { clicks, setActiveClickable } = useStoryModeContext();
-  const [unlockedClickables, setUnlockedClickables] = useLocalStorage(
+  const [unlockedClickablesIds, setUnlockedClickablesIds] = useLocalStorage(
     'itstings/clickables',
     [],
   );
@@ -22,8 +23,8 @@ export const useClickables = (): UseClickables => {
 
   const unlockClickable = useCallback(
     (id: string) => {
-      if (id && !unlockedClickables.includes(id)) {
-        setUnlockedClickables([...unlockedClickables, id]);
+      if (id && !unlockedClickablesIds.includes(id)) {
+        setUnlockedClickablesIds([...unlockedClickablesIds, id]);
       }
     },
     [clicks],
@@ -45,5 +46,13 @@ export const useClickables = (): UseClickables => {
     }
   };
 
-  return { setClickable };
+  const unlockedClickables = useMemo(
+    () =>
+      clickables.filter(clickable =>
+        unlockedClickablesIds.includes(clickable.id),
+      ),
+    [unlockedClickablesIds],
+  );
+
+  return { setClickable, unlockedClickables };
 };

@@ -9,12 +9,13 @@ type UseAchievement = {
   sortedAchievements: Achievement[];
   getAchievement: () => Achievement | undefined;
   unlockAchievement: () => void;
+  unlockedAchievements: Achievement[];
 };
 
 export const useAchievements = (): UseAchievement => {
   const { clicks } = useStoryModeContext();
   const { showAchievementNotification } = useAchievementNotification();
-  const [unlockedAchievements, setUnlockedAchievements] = useLocalStorage(
+  const [unlockedAchievementsIds, setUnlockedAchievementsIds] = useLocalStorage(
     'itstings/achievements',
     [],
   );
@@ -31,11 +32,30 @@ export const useAchievements = (): UseAchievement => {
 
   const unlockAchievement = useCallback(() => {
     const newAchievement = getAchievement();
-    if (newAchievement && !unlockedAchievements.includes(newAchievement.id)) {
-      setUnlockedAchievements([...unlockedAchievements, newAchievement.id]);
+    if (
+      newAchievement &&
+      !unlockedAchievementsIds.includes(newAchievement.id)
+    ) {
+      setUnlockedAchievementsIds([
+        ...unlockedAchievementsIds,
+        newAchievement.id,
+      ]);
       showAchievementNotification(newAchievement);
     }
   }, [clicks]);
 
-  return { sortedAchievements, getAchievement, unlockAchievement };
+  const unlockedAchievements = useMemo(
+    () =>
+      achievements.filter(achievement =>
+        unlockedAchievementsIds.includes(achievement.id),
+      ),
+    [unlockedAchievementsIds],
+  );
+
+  return {
+    sortedAchievements,
+    getAchievement,
+    unlockAchievement,
+    unlockedAchievements,
+  };
 };
