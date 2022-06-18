@@ -2,7 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Flex } from 'components';
-import { CactusButton, CactusStory, StatusBar } from 'containers';
+import {
+  AchievementList,
+  CactusButton,
+  CactusStory,
+  ClickablesList,
+  StatusBar,
+} from 'containers';
+
 import { Theme } from 'shared/theme';
 import { useAppContext } from 'shared/context';
 import { useHandleSaveGame } from 'hooks';
@@ -14,6 +21,8 @@ export default function StoryMode(): JSX.Element {
   return (
     <MainWrapper theme={theme}>
       <Flex column align justify>
+        <AchievementList />
+        <ClickablesList />
         <StatusBar />
         <CactusButton />
         <CactusStory />
