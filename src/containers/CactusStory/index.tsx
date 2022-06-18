@@ -1,11 +1,11 @@
 import React, { useMemo } from 'react';
 import styled from 'styled-components';
 
-import { useAppContext } from 'shared/context';
+import { useStoryModeContext } from 'shared/context';
 import { useStory } from 'story';
 
 export const CactusStory = (): JSX.Element => {
-  const { clicks } = useAppContext();
+  const { clicks } = useStoryModeContext();
   const { getStory } = useStory();
 
   const currentStory = useMemo(() => {

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Flex } from 'components';
-import { useAppContext } from 'shared/context';
+import { useStoryModeContext } from 'shared/context';
 
 export const StatusBar = (): JSX.Element => {
-  const { clicks, setClicks } = useAppContext();
+  const { clicks, setClicks } = useStoryModeContext();
 
   const onRestart = () => {
     setClicks(1);

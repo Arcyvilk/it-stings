@@ -1,11 +1,11 @@
 import { useLocalStorage } from 'hooks/useLocalStorage';
 import { useEffect } from 'react';
-import { useAppContext } from 'shared/context';
+import { useStoryModeContext } from 'shared/context';
 
 const defaultSave = { clicks: 0 };
 
 export const useHandleSaveGame = (): void => {
-  const { clicks, setClicks } = useAppContext();
+  const { clicks, setClicks } = useStoryModeContext();
   const [savedGame, setSaveGame] = useLocalStorage(
     'itstings/save',
     defaultSave,

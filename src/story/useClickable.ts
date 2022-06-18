@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useAppContext } from 'shared/context';
+import { useStoryModeContext } from 'shared/context';
 import { Clickable, clickables } from './clickables';
 
 type UseClickable = {
@@ -8,7 +8,7 @@ type UseClickable = {
 };
 
 export const useClickable = (): UseClickable => {
-  const { clicks } = useAppContext();
+  const { clicks } = useStoryModeContext();
 
   const sortedClickables = useMemo(() => {
     return clickables.sort((a: Clickable, b: Clickable) => b.clicks - a.clicks);

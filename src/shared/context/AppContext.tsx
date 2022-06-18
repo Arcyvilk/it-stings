@@ -2,23 +2,20 @@ import React, { useState, useEffect, useContext } from 'react';
 import { ThemeType } from 'shared/types';
 import { theme as mainTheme, Theme } from 'shared/theme';
 
-type ContextType = {
+type AppContextType = {
   themeType: ThemeType;
   setThemeType: (themeType: ThemeType) => void;
   theme: Theme;
   setTheme: (theme: Theme) => void;
-  clicks: number;
-  setClicks: (clicks: number) => void;
 };
 type Props = {
   children: React.ReactNode;
 };
 
-const AppContextProvider = ({ children }: Props): JSX.Element => {
+export const AppContextProvider = ({ children }: Props): JSX.Element => {
   const defaultThemeType: ThemeType = 'dark';
   const [themeType, setThemeType] = useState<ThemeType>(defaultThemeType);
   const [theme, setTheme] = useState<Theme>(mainTheme[defaultThemeType]);
-  const [clicks, setClicks] = useState<number>(0);
 
   useEffect(() => {
     setTheme(mainTheme[themeType]);
@@ -29,13 +26,10 @@ const AppContextProvider = ({ children }: Props): JSX.Element => {
     setThemeType,
     theme,
     setTheme,
-    clicks,
-    setClicks,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 
-export default AppContextProvider;
-export const AppContext = React.createContext({} as ContextType);
-export const useAppContext = (): ContextType => useContext(AppContext);
+export const AppContext = React.createContext({} as AppContextType);
+export const useAppContext = (): AppContextType => useContext(AppContext);

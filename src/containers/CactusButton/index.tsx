@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { useAppContext } from 'shared/context';
+import { useStoryModeContext } from 'shared/context';
 import { Bounce } from 'components';
 import { getOuch } from 'assets/sounds/ouch';
 import { useClickable } from 'story';
 
 export const CactusButton = (): JSX.Element => {
-  const { clicks, setClicks } = useAppContext();
+  const { clicks, setClicks } = useStoryModeContext();
   const { getClickable } = useClickable();
 
   const clickable = getClickable();
 
-  const incrementClicks = () => {
+  const onTouchableClick = () => {
     setClicks(clicks + 1);
     if (!clickable.mute) {
       const ouch = getOuch();
@@ -26,7 +26,7 @@ export const CactusButton = (): JSX.Element => {
       <Cactus
         src={clickable.src}
         width={clickable.width}
-        onClick={incrementClicks}
+        onClick={onTouchableClick}
       />
     </Bounce>
   );
