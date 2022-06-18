@@ -93,16 +93,6 @@ export const clickables: Clickable[] = [
     clicks: 2420,
     src: angryCat,
     minSize: 100,
-    growth: 5,
-  },
-  {
-    id: 'cactus_golden_2',
-    name: 'Golden Cactus',
-    // eslint-disable-next-line prettier/prettier
-    description: 'Wait, I\'ve already seen this one before...',
-    clicks: 2530,
-    src: goldenCactus,
-    minSize: 100,
-    growth: 1.5,
+    growth: 10,
   },
 ];
