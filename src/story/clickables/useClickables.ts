@@ -3,11 +3,11 @@ import { useMemo } from 'react';
 import { useStoryModeContext } from 'shared/context';
 import { Clickable, clickables } from './clickables';
 
-type UseClickable = {
+type UseClickables = {
   getClickable: () => { src: string; mute: boolean; width: number };
 };
 
-export const useClickable = (): UseClickable => {
+export const useClickables = (): UseClickables => {
   const { clicks } = useStoryModeContext();
 
   const sortedClickables = useMemo(() => {
