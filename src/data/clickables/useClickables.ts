@@ -10,7 +10,7 @@ type UseClickables = {
 };
 
 export const useClickables = (): UseClickables => {
-  const { clicks, activeClickable, setActiveClickable } = useStoryModeContext();
+  const { clicks, setActiveClickable } = useStoryModeContext();
   const [unlockedClickables, setUnlockedClickables] = useLocalStorage(
     'itstings/clickables',
     [],
@@ -31,9 +31,6 @@ export const useClickables = (): UseClickables => {
 
   const setClickable = () => {
     const clickable = sortedClickables.find(entry => entry.clicks <= clicks);
-    if (activeClickable.id === clickable?.id) {
-      return;
-    }
     if (!clickable) {
       setActiveClickable(defaultClickable);
     } else {
