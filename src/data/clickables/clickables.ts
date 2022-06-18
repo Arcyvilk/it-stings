@@ -93,6 +93,6 @@ export const clickables: Clickable[] = [
     clicks: 2420,
     src: angryCat,
     minSize: 100,
-    growth: 10,
+    growth: 8,
   },
 ];
