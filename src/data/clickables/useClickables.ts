@@ -17,19 +17,19 @@ export const useClickables = (): UseClickables => {
 
   const setClickable = () => {
     const clickable = sortedClickables.find(entry => entry.clicks <= clicks);
-    if (activeClickable) {
-      if (!clickable) {
-        setActiveClickable(defaultClickable);
-      } else {
-        setActiveClickable({
-          id: clickable?.id,
-          src: clickable?.src,
-          mute: !!clickable?.mute,
-          width:
-            clickable.minSize +
-            (clicks - clickable?.clicks) * clickable?.growth,
-        });
-      }
+    if (activeClickable.id === clickable?.id) {
+      return;
+    }
+    if (!clickable) {
+      setActiveClickable(defaultClickable);
+    } else {
+      setActiveClickable({
+        id: clickable?.id,
+        src: clickable?.src,
+        mute: !!clickable?.mute,
+        width:
+          clickable.minSize + (clicks - clickable?.clicks) * clickable?.growth,
+      });
     }
   };
 
