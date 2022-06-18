@@ -4,3 +4,4 @@ export * from './CactusButton';
 export * from './CactusStory';
 export * from './ClickablesList';
 export * from './StatusBar';
+export * from './TrophyCabinet';
