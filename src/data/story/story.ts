@@ -47,8 +47,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 350,
-    // eslint-disable-next-line prettier/prettier
-    text: 'No, you won\'t get a medal for this.',
+    text: 'No, you won’t get a medal for this.',
     id: '8e8a9a4b-3827-4217-b09a-4795216a0da1',
   },
   {
@@ -88,8 +87,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 760,
-    // eslint-disable-next-line prettier/prettier
-    text: 'It\'s almost as if I was talking to a wall.',
+    text: 'It’s almost as if I was talking to a wall.',
     id: '40b62594-a1fb-4431-acaa-8178594080ff',
   },
   {
@@ -99,8 +97,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 850,
-    // eslint-disable-next-line prettier/prettier
-    text: 'I hope you don\'t have any people around who could suffer from tryphophobia.',
+    text: 'I hope you don’t have any people around who could suffer from tryphophobia.',
     id: 'ad986ad6-8a7c-4570-ba96-d814c0c51994',
   },
   {
@@ -115,8 +112,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 1015,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Soon you won\'t be able to see the number of clicks anymore. It will ultimately remove any remaining reason to click.',
+    text: 'Soon you won’t be able to see the number of clicks anymore. It will ultimately remove any remaining reason to click.',
     id: 'a09baeb1-624f-4d19-862c-a50d12a6712c',
   },
   {
@@ -131,8 +127,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 1150,
-    // eslint-disable-next-line prettier/prettier
-    text: 'In fact, I pity you so much that I think it\'s time to spice up your little activity a bit.',
+    text: 'In fact, I pity you so much that I think it’s time to spice up your little activity a bit.',
     id: '3aaa17db-981a-4b98-94ce-c56492019fdd',
   },
   {
@@ -147,14 +142,12 @@ export const stories: Story[] = [
   },
   {
     clicks: 1300,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Or... crying of pain. I don\'t judge.',
+    text: 'Or... crying of pain. I don’t judge.',
     id: '452c10f1-b221-46b0-9c4e-6df2bbc0938d',
   },
   {
     clicks: 1350,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Actually I DO judge, but that\'s besides the point.',
+    text: 'Actually I DO judge, but that’s besides the point.',
     id: '6dcd755a-1173-4041-bdcc-8fcaa36a16eb',
   },
   {
@@ -169,7 +162,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 1500,
-    text: 'Turns out spikes are nature\'s subtle way of communicating "No! Stop touching me! I hate being touched! Go away!"',
+    text: 'Turns out spikes are nature’s subtle way of communicating "No! Stop touching me! I hate being touched! Go away!"',
     id: '9eafc53b-7f3e-4981-9558-2eaf3e8d7e84',
   },
   {
@@ -179,8 +172,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 1590,
-    // eslint-disable-next-line prettier/prettier
-    text: '...and yet, knowing that, you\'re still touching that poor hedgehog. You\'re the most thickskulled individual I\'ve ever encountered.',
+    text: '...and yet, knowing that, you’re still touching that poor hedgehog. You’re the most thickskulled individual I’ve ever encountered.',
     id: 'c739487a-caa9-4dcd-9e2e-1778c2f3cda9',
   },
   {
@@ -190,14 +182,12 @@ export const stories: Story[] = [
   },
   {
     clicks: 1700,
-    // eslint-disable-next-line prettier/prettier
-    text: 'You\'re purposedly causing it discomfort despite there being no discernible reward for it. I\'m afraid you might be a psychopath.',
+    text: 'You’re purposedly causing it discomfort despite there being no discernible reward for it. I’m afraid you might be a psychopath.',
     id: '43a0efc0-08a1-416c-b3f5-8b1c28ddc758',
   },
   {
     clicks: 1753,
-    // eslint-disable-next-line prettier/prettier
-    text: 'This is your 1753th time touching a spiked thing, and we aren\'t even a bit closer to an end.',
+    text: 'This is your 1753th time touching a spiked thing, and we aren’t even a bit closer to an end.',
     id: 'c8716bd5-e1f3-4aa3-8935-cc4124480e8a',
   },
   {
@@ -207,8 +197,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 1860,
-    // eslint-disable-next-line prettier/prettier
-    text: 'It\'s a plausible theory, isn\'t it? What could be another reason for this glorious phenomena?',
+    text: 'It’s a plausible theory, isn’t it? What could be another reason for this glorious phenomena?',
     id: 'd0be5878-b1db-489e-ae8c-7a09c50f17b1',
   },
   {
@@ -233,8 +222,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 2100,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Given how clueless you\'ve proven to be so far, I think I owe you a little bit of context with this one.',
+    text: 'Given how clueless you’ve proven to be so far, I think I owe you a little bit of context with this one.',
     id: 'f219d427-fb6b-4597-a660-6303da388fa2',
   },
   {
@@ -249,8 +237,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 2295,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Now, I don\'t blame you if you still don\'t get it, but barbed wire is literally created to make people abstain from touching whatever is behind it, and by extension, also the barbed wire itself.',
+    text: 'Now, I don’t blame you if you still don’t get it, but barbed wire is literally created to make people abstain from touching whatever is behind it, and by extension, also the barbed wire itself.',
     id: '9a36ad56-e193-4b09-b982-2629e5b61859',
   },
   {
@@ -285,20 +272,17 @@ export const stories: Story[] = [
   },
   {
     clicks: 2670,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Okay, let\'s try once again with a smaller amount.',
+    text: 'Okay, let’s try once again with a smaller amount.',
     id: '296b4553-b29f-49b2-a157-9a73d7792131',
   },
   {
     clicks: 2700,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Now don\'t let it fool you: it\'s not as dense as the roll of barbed wire, but still as deadly.',
+    text: 'Now don’t let it fool you: it’s not as dense as the roll of barbed wire, but still as deadly.',
     id: 'f54a51e2-c4b6-44dd-a9e1-bca7c6fc6281',
   },
   {
     clicks: 2750,
-    // eslint-disable-next-line prettier/prettier
-    text: 'It\'s a razor wire instead of a barbed one, so it\'s more like slicey-slicey than spikey-spikey, but it doesn\'t make any difference, as you are apparently still going to touch it.',
+    text: 'It’s a razor wire instead of a barbed one, so it’s more like slicey-slicey than spikey-spikey, but it doesn’t make any difference, as you are apparently still going to touch it.',
     id: '5d602b7e-3adf-40a4-be52-eb95f4e73e15',
   },
   {
@@ -308,14 +292,12 @@ export const stories: Story[] = [
   },
   {
     clicks: 2880,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Dunno about you, but I don\'t fancy happily spawning gigantic pain devices. It does not seem very responsible.',
+    text: 'Dunno about you, but I don’t fancy happily spawning gigantic pain devices. It does not seem very responsible.',
     id: '48de826d-f9a9-4289-9a88-c8668aa75e0c',
   },
   {
     clicks: 2935,
-    // eslint-disable-next-line prettier/prettier
-    text: '...not that it\'s going to stop you.',
+    text: '...not that it’s going to stop you.',
     id: '898dd9de-ee42-47d9-8a51-bc1e26521c47',
   },
   {
@@ -330,8 +312,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 3050,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Hmm... Nope, this won\'t do...',
+    text: 'Hmm... Nope, this won’t do...',
     id: '7c23295d-e932-485d-aecf-1830767a36a7',
   },
   {
@@ -341,20 +322,17 @@ export const stories: Story[] = [
   },
   {
     clicks: 3130,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Frankly, I kinda feel him. You\'re like cursed king Midas, but instead of turning things to gold, you turn them huge as long as they hurt you.',
+    text: 'Frankly, I kinda feel him. You’re like cursed king Midas, but instead of turning things to gold, you turn them huge as long as they hurt you.',
     id: '5c1cfa5f-7a87-424c-94c5-cca8deb23286',
   },
   {
     clicks: 3200,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Why can\'t you just turn all of those spikey things into gold? That would be a great business plan.',
+    text: 'Why can’t you just turn all of those spikey things into gold? That would be a great business plan.',
     id: 'ba568fdd-2938-4dce-a204-3c92e73d38d9',
   },
   {
     clicks: 3240,
-    // eslint-disable-next-line prettier/prettier
-    text: 'A small digression: you already touched items I gave you over three point two thousand times. Now imagine you were turning things to gold instead, for goddamn\'s sake.',
+    text: 'A small digression: you already touched items I gave you over three point two thousand times. Now imagine you were turning things to gold instead, for goddamn’s sake.',
     id: '04673fa2-200c-4ccf-a7d2-0421ae962cc7',
   },
   {
@@ -364,26 +342,22 @@ export const stories: Story[] = [
   },
   {
     clicks: 3360,
-    // eslint-disable-next-line prettier/prettier
-    text: 'I\'m not even sure if "decillionare" is an actual word. I don\'t think anyone has amassed this amount of wealth, ever, so there isn\'t even a legit word for that.',
+    text: 'I’m not even sure if "decillionare" is an actual word. I don’t think anyone has amassed this amount of wealth, ever, so there isn’t even a legit word for that.',
     id: 'b5ee675c-646a-4e78-a0d7-d49632852433',
   },
   {
     clicks: 3430,
-    // eslint-disable-next-line prettier/prettier
-    text: 'But nooooo, your superpower is to make spikey things bigger and bigger, hurting yourself in the process. That\'s most likely the shittiest superpower I\'ve ever heard of.',
+    text: 'But nooooo, your superpower is to make spikey things bigger and bigger, hurting yourself in the process. That’s most likely the shittiest superpower I’ve ever heard of.',
     id: '75e45db6-2575-40e6-bccd-374db589f8f8',
   },
   {
     clicks: 3500,
-    // eslint-disable-next-line prettier/prettier
-    text: '...unless... The thing you touch does not need to be spikey. We didn\'t actually test anything with no spikes at all.',
+    text: '...unless... The thing you touch does not need to be spikey. We didn’t actually test anything with no spikes at all.',
     id: 'e7d3a59a-9ced-4314-820a-62efb0960e67',
   },
   {
     clicks: 3550,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Okay, so let\'s find you a harmless thing to touch. Not spikey, not dangerous when grown to a huge size.',
+    text: 'Okay, so let’s find you a harmless thing to touch. Not spikey, not dangerous when grown to a huge size.',
     id: 'd3fdfd8a-0cea-4426-b303-5c3c7eeeab23',
   },
   {
@@ -398,8 +372,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 3650,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Look, this seems harmless enough. Let\'s give it a try.',
+    text: 'Look, this seems harmless enough. Let’s give it a try.',
     id: 'b0f2cbb3-cf03-4bdf-b94b-43076f0bbd92',
   },
   {
@@ -414,8 +387,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 3800,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Let\'s give it a few more touches. For science.',
+    text: 'Let’s give it a few more touches. For science.',
     id: '9e3e0658-c47c-4c2a-9ad7-8efb0a680dac',
   },
   {
@@ -430,14 +402,13 @@ export const stories: Story[] = [
   },
   {
     clicks: 3930,
-    // eslint-disable-next-line prettier/prettier
-    text: 'This is Harry. He\'s a very nice kitty. You are allowed to pet him. For science.',
+    text: 'This is Harry. He’s a very nice kitty. You are allowed to pet him. For science.',
     id: '7c44ab3b-b341-4b48-9e8b-946db36e9712',
   },
   {
     // TODO add audio for this one and the rest!
     clicks: 3980,
-    text: '...this is... not how you pet a cat. Petting a cat is done via gentle strokes in direction from head towards tail, alongside spine. What you\'re doing is "poking a cat".',
+    text: '...this is... not how you pet a cat. Petting a cat is done via gentle strokes in direction from head towards tail, alongside spine. What you’re doing is "poking a cat".',
     id: '9d3cc9cf-2f4e-4814-bf6c-05f0efeb61ff',
   },
   {
@@ -462,8 +433,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 4230,
-    // eslint-disable-next-line prettier/prettier
-    text: 'Holy crap, he\'s growing so fast! Abort! ABORT!',
+    text: 'Holy crap, he’s growing so fast! Abort! ABORT!',
     id: '7cfc9e30-b586-4ed4-965a-14c7b5357ced',
   },
   {
