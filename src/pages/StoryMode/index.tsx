@@ -7,6 +7,7 @@ import {
   CactusButton,
   CactusStory,
   ClickablesList,
+  Settings,
   StatusBar,
 } from 'containers';
 
@@ -15,7 +16,7 @@ import { useAppContext, useStoryModeContext } from 'shared/context';
 import { useHandleSaveGame } from 'hooks';
 
 export default function StoryMode(): JSX.Element {
-  const { theme } = useAppContext();
+  const { theme, showSettingsModal } = useAppContext();
   const { showAchievementsList, showClickablesList } = useStoryModeContext();
   useHandleSaveGame();
 
@@ -24,6 +25,7 @@ export default function StoryMode(): JSX.Element {
       <Flex column align justify>
         {showAchievementsList && <AchievementList />}
         {showClickablesList && <ClickablesList />}
+        {showSettingsModal && <Settings />}
         <StatusBar />
         <CactusButton />
         <CactusStory />

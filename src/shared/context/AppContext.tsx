@@ -7,15 +7,18 @@ type AppContextType = {
   setThemeType: (themeType: ThemeType) => void;
   theme: Theme;
   setTheme: (theme: Theme) => void;
+  showSettingsModal: boolean;
+  setShowSettingsModal: (showClickablesList: boolean) => void;
 };
 type Props = {
   children: React.ReactNode;
 };
 
 export const AppContextProvider = ({ children }: Props): JSX.Element => {
-  const defaultThemeType: ThemeType = 'dark';
+  const defaultThemeType: ThemeType = ThemeType.DARK;
   const [themeType, setThemeType] = useState<ThemeType>(defaultThemeType);
   const [theme, setTheme] = useState<Theme>(mainTheme[defaultThemeType]);
+  const [showSettingsModal, setShowSettingsModal] = useState<boolean>(false);
 
   useEffect(() => {
     setTheme(mainTheme[themeType]);
@@ -26,6 +29,8 @@ export const AppContextProvider = ({ children }: Props): JSX.Element => {
     setThemeType,
     theme,
     setTheme,
+    showSettingsModal,
+    setShowSettingsModal,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
