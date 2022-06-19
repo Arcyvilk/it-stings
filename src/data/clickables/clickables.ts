@@ -11,8 +11,8 @@ export type Clickable = {
   id: string;
   name: string;
   description: string;
-  clicks: number;
   src: string;
+  clicks: number;
   minSize: number;
   growth: number;
   unlockable: boolean;
@@ -24,8 +24,8 @@ export const clickables: Clickable[] = [
     id: 'cactus_golden',
     name: 'Golden Cactus',
     description: 'A golden cactus.',
-    clicks: 0,
     src: goldenCactus,
+    clicks: 0,
     minSize: 100,
     growth: 1.5,
     unlockable: true,
@@ -34,8 +34,8 @@ export const clickables: Clickable[] = [
     id: 'hedgehog',
     name: 'Hedgehog',
     description: 'A cute specimen of the Erinaceus Europaeus.',
-    clicks: 680,
     src: hedgehog,
+    clicks: 680,
     minSize: 100,
     growth: 1.5,
     unlockable: true,
@@ -44,8 +44,8 @@ export const clickables: Clickable[] = [
     id: 'barbed_wire',
     name: 'Barbed wire',
     description: 'A shiny roll of pure suffering.',
-    clicks: 1150,
     src: barbedWire,
+    clicks: 1150,
     minSize: 100,
     growth: 2,
     unlockable: true,
@@ -55,8 +55,8 @@ export const clickables: Clickable[] = [
     name: 'Razor wire',
     // eslint-disable-next-line prettier/prettier
     description: 'If you thought the barbed wire wasn\'t extreme enough.',
-    clicks: 1530,
     src: razorWire,
+    clicks: 1530,
     minSize: 100,
     growth: 3,
     unlockable: true,
@@ -65,8 +65,8 @@ export const clickables: Clickable[] = [
     id: 'sea_urchin',
     name: 'Sea urchin',
     description: 'A spiny, globular echinoderm.',
-    clicks: 1740,
     src: seaUrchin,
+    clicks: 1740,
     minSize: 100,
     growth: 1.5,
     unlockable: true,
@@ -75,8 +75,8 @@ export const clickables: Clickable[] = [
     id: 'teddy_bear',
     name: 'Teddy bear',
     description: 'Cute cuddly bear.',
-    clicks: 2120,
     src: teddyBear,
+    clicks: 2120,
     minSize: 100,
     growth: 0,
     mute: true,
@@ -86,8 +86,8 @@ export const clickables: Clickable[] = [
     id: 'happy_cat',
     name: 'Harry',
     description: 'Gentle and friendly orange tomcat.',
-    clicks: 2270,
     src: happyCat,
+    clicks: 2270,
     minSize: 100,
     growth: 0,
     mute: true,
@@ -98,8 +98,8 @@ export const clickables: Clickable[] = [
     name: 'Angry Harry',
     description:
       'Even the most gentle of all feline family will get annoyed when poked one time too much.',
-    clicks: 2420,
     src: angryCat,
+    clicks: 2420,
     minSize: 100,
     growth: 7,
     unlockable: true,
