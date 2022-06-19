@@ -61,7 +61,6 @@ const PicWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
   min-height: 48px;
   max-width: 48px;
   max-height: 48px;
-  background-color: black;
   box-sizing: border-box;
   margin-right: 8px;
 `;
