@@ -62,7 +62,7 @@ export const stories: Story[] = [
     id: '2b45c5db-229b-405c-be70-09c834d123db',
   },
   {
-    clicks: 500,
+    clicks: 510,
     text: 'In fact, doing it for any kind of reward would be pretty dumb as well.',
     id: '2a3ad955-185b-4f04-82f4-e03ea2edc401',
   },
@@ -77,7 +77,7 @@ export const stories: Story[] = [
     id: '012086cf-dfad-4155-89b4-75269ea9877d',
   },
   {
-    clicks: 650,
+    clicks: 660,
     text: 'Oh, did that example sound... oddly specific? Good. It was supposed to.',
     id: '5f4a1b0e-6cb5-42a1-844c-6b9ec430fa1b',
   },
@@ -87,7 +87,7 @@ export const stories: Story[] = [
     id: '205e3b45-f84f-42c9-b7c9-c6fc0fb65234',
   },
   {
-    clicks: 750,
+    clicks: 760,
     // eslint-disable-next-line prettier/prettier
     text: 'It\'s almost as if I was talking to a wall.',
     id: '40b62594-a1fb-4431-acaa-8178594080ff',
@@ -109,23 +109,23 @@ export const stories: Story[] = [
     id: 'f15e0068-26a2-43c1-95c3-5613678a1124',
   },
   {
-    clicks: 950,
+    clicks: 965,
     text: 'By the way, it seems that your masochistic tendencies cause the cactus to grow. It pretty much covers your entire screen already.',
     id: '915e800b-e010-4b6d-b3d9-7530fe88225b',
   },
   {
-    clicks: 1000,
+    clicks: 1015,
     // eslint-disable-next-line prettier/prettier
     text: 'Soon you won\'t be able to see the number of clicks anymore. It will ultimately remove any remaining reason to click.',
     id: 'a09baeb1-624f-4d19-862c-a50d12a6712c',
   },
   {
-    clicks: 1050,
+    clicks: 1055,
     text: 'What a cruel irony; a pointless activity recursively causing itself to be even more pointless. That would be sad if it was not so pointless.',
     id: '6f3922da-7961-41e1-bc61-3d0b90ee8d7a',
   },
   {
-    clicks: 1100,
+    clicks: 1120,
     text: 'I pity you. I truly, truly, truly pity you.',
     id: '8ed387a5-db4f-4ee1-bb21-938432b5fd49',
   },
@@ -173,7 +173,7 @@ export const stories: Story[] = [
     id: '9eafc53b-7f3e-4981-9558-2eaf3e8d7e84',
   },
   {
-    clicks: 1550,
+    clicks: 1570,
     text: '...',
     id: '7841f4e3-026b-47f1-8f74-758632673968',
   },
@@ -201,12 +201,12 @@ export const stories: Story[] = [
     id: 'c8716bd5-e1f3-4aa3-8935-cc4124480e8a',
   },
   {
-    clicks: 1800,
+    clicks: 1790,
     text: 'It looks like blood leaking from your countless puncture holes is nourishing any living being you touch, because our little friend stopped being "little" quite a bit of time ago',
     id: '8b5a6012-1dad-4441-8844-072f7e318f02',
   },
   {
-    clicks: 1850,
+    clicks: 1860,
     // eslint-disable-next-line prettier/prettier
     text: 'It\'s a plausible theory, isn\'t it? What could be another reason for this glorious phenomena?',
     id: 'd0be5878-b1db-489e-ae8c-7a09c50f17b1',
@@ -254,12 +254,12 @@ export const stories: Story[] = [
     id: '9a36ad56-e193-4b09-b982-2629e5b61859',
   },
   {
-    clicks: 2350,
+    clicks: 2365,
     text: 'So what you are doing right now is legally prohibited by the VERY definition of the entity you are touching. And you show no intention to stop.',
     id: '9c1d73d0-e536-4eb0-a4bf-64da38907f28',
   },
   {
-    clicks: 2400,
+    clicks: 2415,
     text: 'Okay, you might be a bit tired from the blood loss, so I will repeat once again.',
     id: '8563287c-1787-4171-aa8f-f94d4b60953f',
   },
@@ -269,22 +269,22 @@ export const stories: Story[] = [
     id: '101bdca6-7f05-41cd-a905-b37b312ee452',
   },
   {
-    clicks: 2500,
+    clicks: 2550,
     text: '...nope. Still touching.',
     id: 'cda34cb6-06e5-42d0-9e4b-71ab9f2a4365',
   },
   {
-    clicks: 2550,
+    clicks: 2570,
     text: 'On the other hand, it seems like the barbed wire is also growing with your every touch.',
     id: '9863d096-271f-4949-8ddb-35563f13807c',
   },
   {
-    clicks: 2600,
+    clicks: 2620,
     text: 'And it seems that it grows a bit faster than the organic matter. How curious.',
     id: '1a0266f8-5da0-4522-b24d-92854a0d1d4c',
   },
   {
-    clicks: 2650,
+    clicks: 2670,
     // eslint-disable-next-line prettier/prettier
     text: 'Okay, let\'s try once again with a smaller amount.',
     id: '296b4553-b29f-49b2-a157-9a73d7792131',
@@ -358,36 +358,36 @@ export const stories: Story[] = [
     id: '04673fa2-200c-4ccf-a7d2-0421ae962cc7',
   },
   {
-    clicks: 3300,
+    clicks: 3315,
     text: 'We would be absolutely filthy rich, given how much you enjoy poking stuff with your fingers. We would become decillionaries.',
     id: 'f561025c-da60-454b-b9ef-278add3f39e5',
   },
   {
-    clicks: 3350,
+    clicks: 3365,
     // eslint-disable-next-line prettier/prettier
     text: 'I\'m not even sure if "decillionare" is an actual word. I don\'t think anyone has amassed this amount of wealth, ever, so there isn\'t even a legit word for that.',
     id: 'b5ee675c-646a-4e78-a0d7-d49632852433',
   },
   {
-    clicks: 3400,
+    clicks: 3415,
     // eslint-disable-next-line prettier/prettier
     text: 'But nooooo, your superpower is to make spikey things bigger and bigger, hurting yourself in the process. That\'s most likely the shittiest superpower I\'ve ever heard of.',
     id: '75e45db6-2575-40e6-bccd-374db589f8f8',
   },
   {
-    clicks: 3450,
+    clicks: 3480,
     // eslint-disable-next-line prettier/prettier
     text: '...unless... The thing you touch does not need to be spikey. We didn\'t actually test anything with no spikes at all.',
     id: 'e7d3a59a-9ced-4314-820a-62efb0960e67',
   },
   {
-    clicks: 3500,
+    clicks: 3530,
     // eslint-disable-next-line prettier/prettier
     text: 'Okay, so let\'s find you a harmless thing to touch. Not spikey, not dangerous when grown to a huge size.',
     id: 'd3fdfd8a-0cea-4426-b303-5c3c7eeeab23',
   },
   {
-    clicks: 3550,
+    clicks: 3580,
     text: 'Hmm...',
     id: '170ffebd-bc40-4bc6-96f6-840f03d6cf81',
   },
@@ -441,12 +441,12 @@ export const stories: Story[] = [
     id: '9d3cc9cf-2f4e-4814-bf6c-05f0efeb61ff',
   },
   {
-    clicks: 4050,
+    clicks: 4065,
     text: 'Poking a cat does not seem to wield any discernable results towards its unusual growth. Interesting, interesting.',
     id: 'e60248bf-b4c7-475a-b850-da8311176a72',
   },
   {
-    clicks: 4100,
+    clicks: 4110,
     text: 'Really, can you pet the cat instead? I think he is getting a bit angry at you poking him.',
     id: '7035707b-5515-4bbf-8448-55e8aabfb5f6',
   },

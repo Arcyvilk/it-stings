@@ -65,7 +65,7 @@ export const clickables: Clickable[] = [
     description: 'If you thought the barbed wire wasn\'t extreme enough.',
     src: razorWire,
     clickSound: Sounds.OUCH,
-    clicks: 2650,
+    clicks: 2670,
     minSize: 100,
     growth: 2.5,
     unlockable: true,
