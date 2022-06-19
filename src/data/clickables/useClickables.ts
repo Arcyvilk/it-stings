@@ -48,9 +48,9 @@ export const useClickables = (): UseClickables => {
 
   const unlockedClickables = useMemo(
     () =>
-      clickables.filter(clickable =>
-        unlockedClickablesIds.includes(clickable.id),
-      ),
+      clickables
+        .filter(clickable => unlockedClickablesIds.includes(clickable.id))
+        .sort((a: Clickable, b: Clickable) => a.clicks - b.clicks),
     [unlockedClickablesIds],
   );
 

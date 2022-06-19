@@ -46,9 +46,9 @@ export const useAchievements = (): UseAchievement => {
 
   const unlockedAchievements = useMemo(
     () =>
-      achievements.filter(achievement =>
-        unlockedAchievementsIds.includes(achievement.id),
-      ),
+      achievements
+        .filter(achievement => unlockedAchievementsIds.includes(achievement.id))
+        .sort((a: Achievement, b: Achievement) => a.clicks - b.clicks),
     [unlockedAchievementsIds],
   );
 
