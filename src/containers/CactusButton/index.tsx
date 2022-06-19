@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 import { useStoryModeContext } from 'shared/context';
 import { Bounce } from 'components';
-import { getOuch } from 'assets/sounds/ouch';
-import { useStory, useAchievements, useClickables } from 'data';
+import { useStory, useAchievements, useClickables, useSounds } from 'data';
 import { toast } from 'react-toastify';
 
 export const CactusButton = (): JSX.Element => {
   const { clicks, setClicks, activeClickable } = useStoryModeContext();
   const { MAX_CLICKS } = useStory();
+  const { playClickSound } = useSounds();
   const { setClickable } = useClickables();
   const { unlockAchievement } = useAchievements();
 
@@ -27,10 +27,8 @@ export const CactusButton = (): JSX.Element => {
       return;
     }
     setClicks(clicks + 1);
-    if (!activeClickable.mute) {
-      const ouch = getOuch();
-      const audio = new Audio(ouch);
-      audio.play();
+    if (activeClickable.clickSound) {
+      playClickSound();
     }
   };
 

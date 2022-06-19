@@ -36,12 +36,12 @@ export const useClickables = (): UseClickables => {
     if (!clickable) {
       setActiveClickable(defaultClickable);
     } else {
+      const { id, src, clickSound, minSize, growth } = clickable;
       setActiveClickable({
-        id: clickable.id,
-        src: clickable.src,
-        mute: !!clickable.mute,
-        width:
-          clickable.minSize + (clicks - clickable.clicks) * clickable.growth,
+        id,
+        src,
+        clickSound,
+        width: minSize + (clicks - clickable.clicks) * growth,
       });
       unlockClickable(clickable.id);
     }
