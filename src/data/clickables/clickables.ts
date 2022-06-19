@@ -15,6 +15,7 @@ export type Clickable = {
   src: string;
   minSize: number;
   growth: number;
+  unlockable: boolean;
   mute?: boolean;
 };
 
@@ -27,6 +28,7 @@ export const clickables: Clickable[] = [
     src: goldenCactus,
     minSize: 100,
     growth: 1.5,
+    unlockable: true,
   },
   {
     id: 'hedgehog',
@@ -36,6 +38,7 @@ export const clickables: Clickable[] = [
     src: hedgehog,
     minSize: 100,
     growth: 1.5,
+    unlockable: true,
   },
   {
     id: 'barbed_wire',
@@ -45,6 +48,7 @@ export const clickables: Clickable[] = [
     src: barbedWire,
     minSize: 100,
     growth: 2,
+    unlockable: true,
   },
   {
     id: 'razor_wire',
@@ -55,6 +59,7 @@ export const clickables: Clickable[] = [
     src: razorWire,
     minSize: 100,
     growth: 3,
+    unlockable: true,
   },
   {
     id: 'sea_urchin',
@@ -64,6 +69,7 @@ export const clickables: Clickable[] = [
     src: seaUrchin,
     minSize: 100,
     growth: 1.5,
+    unlockable: true,
   },
   {
     id: 'teddy_bear',
@@ -74,6 +80,7 @@ export const clickables: Clickable[] = [
     minSize: 100,
     growth: 0,
     mute: true,
+    unlockable: true,
   },
   {
     id: 'happy_cat',
@@ -84,6 +91,7 @@ export const clickables: Clickable[] = [
     minSize: 100,
     growth: 0,
     mute: true,
+    unlockable: true,
   },
   {
     id: 'angry_cat',
@@ -94,5 +102,6 @@ export const clickables: Clickable[] = [
     src: angryCat,
     minSize: 100,
     growth: 7,
+    unlockable: true,
   },
 ];

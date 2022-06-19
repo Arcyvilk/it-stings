@@ -23,7 +23,8 @@ export const useClickables = (): UseClickables => {
 
   const unlockClickable = useCallback(
     (id: string) => {
-      if (id && !unlockedClickablesIds.includes(id)) {
+      const clickable = clickables.find(c => c.id === id);
+      if (clickable?.unlockable && !unlockedClickablesIds.includes(id)) {
         setUnlockedClickablesIds([...unlockedClickablesIds, id]);
       }
     },
