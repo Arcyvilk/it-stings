@@ -14,7 +14,7 @@ export const ClickablesList = (): JSX.Element => {
 
   return (
     <Modal visible={showClickablesList} setVisible={setShowClickablesList}>
-      <Wrapper>
+      <Wrapper column>
         <Title level={2}>
           <FontAwesomeIcon
             icon={faFingerprint}
@@ -23,7 +23,7 @@ export const ClickablesList = (): JSX.Element => {
           Touchables
         </Title>
       </Wrapper>
-      <Trophies>
+      <Trophies column>
         {unlockedClickables.map(clickable => (
           <TrophyCabinet
             key={`clickable-${clickable.id}`}
@@ -37,12 +37,12 @@ export const ClickablesList = (): JSX.Element => {
   );
 };
 
-const Wrapper = styled(Flex).attrs({ column: true })`
+const Wrapper = styled(Flex)`
   padding-bottom: 4px;
   border-bottom: 1px solid;
 `;
 
-const Trophies = styled(Flex).attrs({ column: true })`
+const Trophies = styled(Flex)`
   width: 100%;
   & > * {
     margin-top: 8px;
