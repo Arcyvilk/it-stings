@@ -19,14 +19,7 @@ import sound_18 from './18.mp3';
 import sound_19 from './19.mp3';
 import sound_20 from './20.mp3';
 
-export const getOuch = (): string => {
-  const min = Math.ceil(1);
-  const max = Math.floor(sounds.length);
-  const soundIndex = Math.floor(Math.random() * max) + min;
-  return sounds[soundIndex];
-};
-
-export const sounds: string[] = [
+export const ouchSound: string[] = [
   sound_1,
   sound_2,
   sound_3,
