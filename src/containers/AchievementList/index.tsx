@@ -21,7 +21,7 @@ export const AchievementList = (): JSX.Element => {
           Achievements
         </Title>
       </Wrapper>
-      <Trophies>
+      <Trophies column>
         {unlockedAchievements.map(achievement => (
           <TrophyCabinet
             key={`achievement-${achievement.id}`}
@@ -35,12 +35,12 @@ export const AchievementList = (): JSX.Element => {
   );
 };
 
-const Wrapper = styled(Flex).attrs({ direction: 'column' })`
+const Wrapper = styled(Flex).attrs({ column: true })`
   padding-bottom: 4px;
   border-bottom: 1px solid;
 `;
 
-const Trophies = styled(Flex).attrs({ direction: 'column' })`
+const Trophies = styled(Flex).attrs({ column: true })`
   width: 100%;
   & > * {
     margin-top: 8px;
