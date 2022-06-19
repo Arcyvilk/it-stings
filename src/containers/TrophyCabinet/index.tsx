@@ -26,7 +26,11 @@ export const TrophyCabinet = (props: Props): JSX.Element => {
           <FontAwesomeIcon icon={icon} />
         </PicWrapper>
       )}
-      {img && <Picture src={img} />}
+      {img && (
+        <PicWrapper theme={theme}>
+          <Picture src={img} />
+        </PicWrapper>
+      )}
       {!icon && !img && (
         <PicWrapper theme={theme}>
           <FontAwesomeIcon icon={faQuestionCircle} />
@@ -66,10 +70,7 @@ const PicWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
 `;
 
 const Picture = styled.img`
-  min-width: 48px;
-  min-height: 48px;
-  max-width: 48px;
-  max-height: 48px;
-  margin-right: 8px;
+  max-width: 100%;
+  max-height: 100%;
   filter: drop-shadow(0 0 7px #000);
 `;

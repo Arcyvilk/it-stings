@@ -73,10 +73,12 @@ const StyledModal = styled.div.attrs(
     };
   },
 )<StyledModalProps>`
+  position: relative;
   width: 100%;
   height: auto;
   max-height: 100%;
   padding: 12px;
   box-sizing: border-box;
   border-radius: 8px;
+  overflow: hidden;
 `;
