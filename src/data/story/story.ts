@@ -441,4 +441,279 @@ export const stories: Story[] = [
     text: 'MEEEEEEEEEEEEEOOOOOOOOOOOW',
     id: '78ac028e-83c1-412b-93ac-534034d2f46f',
   },
+  {
+    clicks: 4280,
+    text: '...okay, that’s enough. Quick, grab this bandage roll.',
+    id: '26e1e2ac-fc36-4243-8c34-2c3d74d556e1',
+  },
+  {
+    clicks: 4310,
+    text: 'Good... good. Gotta stop that blood loss of yours. That was one cat scratch too much.',
+    id: 'fe65b286-2fa5-430b-ac7b-feb052c48488',
+  },
+  {
+    clicks: 4360,
+    text: 'Oh boy... Harry is now really angry. And pretty much the size of a lion.',
+    id: 'f472f922-b4cc-4480-a26a-53c30e19ff4d',
+  },
+  {
+    clicks: 4360,
+    text: 'Gigantic barbed wire roll was bad, but at least unable to move on its own to take out its anger on bystanders.',
+    id: '3f112598-54d7-4cc7-a3bf-a9eaca92c84b',
+  },
+  {
+    clicks: 4410,
+    text: '*distant angry meows and people screaming*',
+    id: '9d6b7c52-3fb5-49d6-93e4-2ea0d38e4f45',
+  },
+  {
+    clicks: 4460,
+    text: 'Well, it’s no use crying over spilt milk. Let’s experiment further.',
+    id: '594598b7-4fb1-400a-b680-fbd9a0eb3657',
+  },
+  {
+    clicks: 4510,
+    text: 'Our previous talk about king Midas inspired me to try something... interesting. It’s highly improbable that it will work, but I really want to try this one.',
+    id: 'ad2d3622-9ff2-4875-8b0a-fe4009cfbbce',
+  },
+  {
+    clicks: 4580,
+    text: 'Okay, ready?',
+    id: 'fc2fd91b-8cde-40d1-82d7-5f59e70e593c',
+  },
+  {
+    clicks: 4610,
+    text: 'Behold! An absolutely real bar of gold! Please refrain from asking where did I get it from and just touch it gently.',
+    id: '7dd8e5a8-246a-4cb6-b9a0-b87e8751b701',
+  },
+  {
+    clicks: 4660,
+    text: 'I do not expect it to grow at all, because it unfortunately does not inflict any pain on you, but it’s worth trying.',
+    id: '4ea4b52a-d2eb-4505-afd8-9c2c6245801d',
+  },
+  {
+    clicks: 4710,
+    text: 'A few more touches. For science.',
+    id: 'c01700db-f64c-4cd8-a587-b6bc1a695fdc',
+  },
+  {
+    clicks: 4760,
+    text: '...poke it just a couple of times more. Please.',
+    id: 'c01700db-f64c-4cd8-a587-b6bc1a695fdc',
+  },
+  {
+    clicks: 4810,
+    text: 'Ehh... As expected. Nothing happened.',
+    id: '5d569601-5c73-44ad-a3b6-4c300586aec2',
+  },
+  {
+    clicks: 4850,
+    text: 'You still managed to fail my expectations even though I didn’t have any.',
+    id: '636b0b51-962e-4ef0-99b7-8ca1d48be473',
+  },
+  {
+    clicks: 4890,
+    text: 'Okay, give that back before its owner notices that it vanished.',
+    id: '21a51ba2-3198-42bf-9be5-4ba66b638aca',
+  },
+  {
+    clicks: 4930,
+    text: 'You are still bleeding, but poking that bandage roll with your index finger should stop the haemorrhaging, if the previous logic of this universe is anything to base on.',
+    id: '448921ca-5495-48d8-9a48-b21be9c18345',
+  },
+  {
+    clicks: 5000,
+    text: 'This is the 5000th time you poke things with your finger, by the way. I’m as unamused as I can be.',
+    id: 'fd26c646-22c5-484a-87b1-4a18ca413bcd',
+  },
+  {
+    clicks: 5050,
+    text: 'Okay. Let’s think if there is a single way of utilizing your useless superpower.',
+    id: 'af760c7e-6d0f-4865-aca9-d318a435bcb3',
+  },
+  {
+    clicks: 5100,
+    text: 'You have to touch something. That something needs to sting you in return. That stimulates it to grow.',
+    id: 'a3d18114-337d-4a57-9a1d-ca4ae8ba7c0c',
+  },
+  {
+    clicks: 5150,
+    text: 'It does not matter if it’s an organic matter or not. We still don’t know what influences rate of the growth.',
+    id: '26575b5d-613b-4c19-a42d-42e2f03480f9',
+  },
+  {
+    clicks: 5200,
+    text: 'What kind of item is both spikey and more useful the bigger it is?',
+    id: '67f96866-6a44-474f-944f-ac61c9f79685',
+  },
+  {
+    clicks: 5250,
+    text: 'Maybe some kind of a food item? You could make such item so big that the world hunger is practically solved.',
+    id: '08b91bdf-7efe-400d-b837-af48563c7aeb',
+  },
+  {
+    clicks: 5300,
+    text: 'A spikey fruit, for example... Hmm. One that comes to my mind is...',
+    id: '1cfde85b-e899-4ac2-aa4c-79cc58be1c22',
+  },
+  {
+    clicks: 5340,
+    text: '...a durian fruit! It has some kind of spikes on its skin.',
+    id: '316057e5-ce46-4dea-865f-fb106df74af0',
+  },
+  {
+    clicks: 5380,
+    text: 'I’ve heard that its smell is... Less than pleasant, but I didn’t actually expect it to be so.. putrid...',
+    id: '00beb734-cfb9-4520-bc1e-ba5689e2fb1d',
+  },
+  {
+    clicks: 5430,
+    text: 'Well. Whatever. It IS a food item, and it DOES grow under your touch. Even if its smell is pungent we are still doing a good deed to the world, right?',
+    id: 'a3b9bf37-a180-46eb-ba9e-9670a12322f3',
+  },
+  {
+    clicks: 5480,
+    text: 'I just hope that the smell won’t get increasingly foul with its size.',
+    id: '80ad9e35-bf48-4e31-86ee-ec06ece79ea1',
+  },
+  {
+    clicks: 5520,
+    text: '...it seems it does. Well, that’s unlucky.',
+    id: '0fb4e562-df2a-412d-a1b5-23cec8cebde6',
+  },
+  {
+    clicks: 5550,
+    text: 'Do you maybe happen to know if a very intense odour is able to kill? It would be unfortunate if we accidentally murdered the entire population of Africa trying to provide them with free food.',
+    id: '27e92bf5-d434-4e53-9551-a7f854bded33',
+  },
+  {
+    clicks: 5620,
+    text: 'I suppose it depends on the source of the smell and the chemicals involved.',
+    id: '18c350a5-759c-4efb-86d0-a3c859eb361e',
+  },
+  {
+    clicks: 5660,
+    text: 'Wikipedia says that the source of durian’s smell is a chemical called ethionine, which is actually highly toxic... and a potent carcinogen...',
+    id: '193dc35c-0e02-466f-a6ae-446cd0ebc91a',
+  },
+  {
+    clicks: 5710,
+    text: '...scrap this stupid fruit. Touch this air freshener. Now. And please, do it quickly and intensely.',
+    id: '765da535-9fa6-4268-af9d-14d6a881d3d4',
+  },
+  {
+    clicks: 5760,
+    text: '...the flowery scent does not mix very well with the putrid odour but that will have to do for now.',
+    id: '37f3d739-ba7d-4fe6-b34c-757ae75aeea9',
+  },
+  {
+    clicks: 5800,
+    text: 'It got a little bit better. I have no idea what will happen with that giant durian though.',
+    id: 'eaf04436-04fe-4ddc-94ea-9b00113b4e90',
+  },
+  {
+    clicks: 5850,
+    text: 'Well, it isn’t our problem anymore. Out of sight, out of mind! Ha haa... Heh.',
+    id: '5374391a-8b63-4977-a41a-711f371fa356',
+  },
+  {
+    clicks: 5900,
+    text: 'But back on topic of saving the world from hunger. I cannot really think of any other spikey food source.',
+    id: 'fa6983d0-3dae-41d3-bcc2-51c018764490',
+  },
+  {
+    clicks: 5950,
+    text: 'Maybe besides edible chestnut, but I don’t know how to differentiate it from normal chestnut, which is highly poisonous. And we don’t want to repeat the past mistakes.',
+    id: 'b298b275-a3c0-4110-b1b7-8bca344e28dd',
+  },
+  {
+    clicks: 6000,
+    text: '...wait. I just had an epiphany. Do any kind of edible cacti exist?',
+    id: 'f02087b2-b15a-4bad-ab14-5f84d9eda62c',
+  },
+  {
+    clicks: 6050,
+    text: 'Cacti are as spikey as it can get and are a huge family, so we probably would be able to find one that does not turn your nose outside out nor causes cancer.',
+    id: 'cb246622-2c98-4a6b-8e67-85d5bb409a9e',
+  },
+  {
+    clicks: 6100,
+    text: 'Let’s once again turn to my trusty Wikipedia!',
+    id: '20cea67a-223a-4be8-9280-5f187211eb26',
+  },
+  {
+    clicks: 6150,
+    text: 'This is just a digression, but imagine what would happen if you could touch Wikipedia. You could patch the missing data in humanity’s collective knowledge in pretty much no time at all.',
+    id: '242ca11b-8201-4f14-90b7-16db728a966d',
+  },
+  {
+    clicks: 6220,
+    text: 'However this births another question: would it be the Wikipedia’s database that would grow, or something else?',
+    id: '951e52f0-284d-4da4-a732-594b9b0e2717',
+  },
+  {
+    clicks: 6270,
+    text: 'Maybe its font would grow bigger instead. Or server space.',
+    id: 'caa6be88-90fd-4cee-a197-9950f701aae7',
+  },
+  {
+    clicks: 6320,
+    text: 'Wikipedia is probably hosted on a cloud though, so growing server space wouldn’t be as useful, especially since they would probably still need to pay for this.',
+    id: 'e914eec8-96bd-4a57-b669-148acc724922',
+  },
+  {
+    clicks: 6380,
+    text: 'And there is so many ways that the knowledge base growth could look like. Would it just expand existing articles? Or add new ones?',
+    id: '2b883859-9b5e-46c0-81ac-e8878aeec5ac',
+  },
+  {
+    clicks: 6430,
+    text: 'Would the article expansion add new, relevant details to its content, or complete nonsense? Maybe it would just copy existing paragraphs over and over and over again?',
+    id: '1d3882cb-8769-408f-966e-c8b5a3413e92',
+  },
+  {
+    clicks: 6490,
+    text: 'Maybe it would base off Markov chain and generate further content based on already existing one. Or use even more sophisticated machine learning algorithms, adding bonus content indistinguishable from the original.',
+    id: 'ca1e475d-c429-4fea-b0d8-a7fab07b22fc',
+  },
+  {
+    clicks: 6560,
+    text: '...I apologize, I let myself daydream foolishly. Obviously you are unable to touch Wikipedia as it does not exist as a physical entity.',
+    id: '1be4739c-8fe1-4c07-82d6-50ae6e874961',
+  },
+  {
+    clicks: 6610,
+    text: 'I guess I am subconsciously trying to cope with the fact I’m stuck here with you and your useless power, which is unable to gigantify even such trivial matter as 24-karat gold bar.',
+    id: 'f626f466-6a77-42ee-b993-68599ecd21ab',
+  },
+  {
+    clicks: 6670,
+    text: '...what? I am too harsh? Really? You stung yourself with a cactus two thousand times and it’s ME that hurt you?',
+    id: 'c572da68-6997-4cc5-bb13-fd1b0878e984',
+  },
+  {
+    clicks: 6720,
+    text: 'If my words stung you so much, I should be the size of Statue of Liberty as of now. And I am obviously not.',
+    id: '7470e2ca-f933-4167-95d6-c269f5fc0be1',
+  },
+  {
+    clicks: 6770,
+    text: 'Enough of this outrageous dispute. I was going to look up edible cacti on Wikipedia and you distracted me for some reason.',
+    id: '6dfc36a4-c78a-4625-a718-64ef73452758',
+  },
+  {
+    clicks: 6820,
+    text: 'Acanthocereus tetragonus. Also known as "barber-wire cactus".',
+    id: 'ea055039-b0fb-44b7-b889-b5cc870c1a8c',
+  },
+  {
+    clicks: 6870,
+    text: ' Young steams can be eaten as a vegetable either cooked or raw, while the fruits are edible and sweet.',
+    id: '4d233476-9d55-489c-baa2-780bbddf9203',
+  },
+  {
+    clicks: 6920,
+    text: 'This sounds pretty much perfect. Go, my minion! Do your deed!',
+    id: 'b13cf322-05c3-4765-8bb5-281bca46f079',
+  },
 ];

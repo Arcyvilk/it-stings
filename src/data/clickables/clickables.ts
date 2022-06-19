@@ -6,6 +6,12 @@ import seaUrchin from 'assets/images/cacti/seaUrchin.png';
 import teddyBear from 'assets/images/cacti/teddyBear.png';
 import happyCat from 'assets/images/cacti/happyCat.png';
 import angryCat from 'assets/images/cacti/angryCat.png';
+import bandageRoll from 'assets/images/cacti/bandageRoll.png';
+import goldBar from 'assets/images/cacti/goldBar.png';
+import durianFruit from 'assets/images/cacti/durianFruit.png';
+import airFreshener from 'assets/images/cacti/airFreshener.png';
+import wikipedia from 'assets/images/cacti/wikipedia.png';
+import barbedWireCactus from 'assets/images/cacti/barbedWireCactus.png';
 
 export enum Sounds {
   OUCH = 'ouch',
@@ -21,7 +27,7 @@ export type Clickable = {
   clicks: number;
   minSize: number;
   growth: number;
-  unlockable: boolean;
+  unlockable?: boolean;
 };
 
 export const clickables: Clickable[] = [
@@ -103,7 +109,7 @@ export const clickables: Clickable[] = [
   },
   {
     id: 'angry_cat',
-    name: 'Angry Harry',
+    name: 'Very angry Harry',
     description:
       'Even the most gentle of all feline family will get annoyed when poked one time too much.',
     src: angryCat,
@@ -111,6 +117,78 @@ export const clickables: Clickable[] = [
     clicks: 4140,
     minSize: 100,
     growth: 7,
+    unlockable: true,
+  },
+  {
+    id: 'bandage_roll',
+    name: 'Bandage roll',
+    description:
+      'Something to soak up the blood leaking from all of your cactus needle wounds.',
+    src: bandageRoll,
+    clicks: 4280,
+    minSize: 200,
+    growth: 0,
+    unlockable: true,
+  },
+  {
+    id: 'gold_bar',
+    name: 'A bar of gold',
+    description: 'Absolutely authentic 24-karat gold bar.',
+    src: goldBar,
+    clicks: 4610,
+    minSize: 200,
+    growth: 0,
+    unlockable: true,
+  },
+  {
+    id: 'bandage_roll_2',
+    name: 'Bandage roll',
+    description:
+      'Something to soak up the blood leaking from all of your cactus needle wounds.',
+    src: bandageRoll,
+    clicks: 4900,
+    minSize: 200,
+    growth: 0,
+  },
+  {
+    id: 'durian_fruit',
+    name: 'Durian fruit',
+    description: 'It stings so much. It stinks so much.',
+    src: durianFruit,
+    clickSound: Sounds.OUCH,
+    clicks: 5340,
+    minSize: 150,
+    growth: 3,
+    unlockable: true,
+  },
+  {
+    id: 'air_freshener',
+    name: 'Air freshener',
+    description: 'It has a heavy, flowery scent.',
+    src: airFreshener,
+    clicks: 5710,
+    minSize: 200,
+    growth: 0,
+    unlockable: true,
+  },
+  {
+    id: 'wikipedia',
+    name: 'Wikipedia',
+    description: 'Why are you touching a Wikipedia logo?',
+    src: wikipedia,
+    clicks: 5710,
+    minSize: 150,
+    growth: 0,
+  },
+  {
+    id: 'barbed_wire_cactus',
+    name: 'Acanthocereus tetragonus',
+    description:
+      'A species of edible cacti. Can be eaten raw, assuming you got rid of all the needles before.',
+    src: barbedWireCactus,
+    clicks: 6820,
+    minSize: 200,
+    growth: 1,
     unlockable: true,
   },
 ];
