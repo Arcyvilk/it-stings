@@ -94,7 +94,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 800,
-    text: 'Wall covered with an extraordinary amount of holes, mind you.',
+    text: 'Wall covered with an extraordinary amount of holes.',
     id: '19b30374-9126-471f-a4e4-8debbe6defc4',
   },
   {
@@ -132,7 +132,7 @@ export const stories: Story[] = [
   {
     clicks: 1150,
     // eslint-disable-next-line prettier/prettier
-    text: 'In fact, I pity you so much that I think it\'s time to spice up your little activity a little bit.',
+    text: 'In fact, I pity you so much that I think it\'s time to spice up your little activity a bit.',
     id: '3aaa17db-981a-4b98-94ce-c56492019fdd',
   },
   {
@@ -195,14 +195,14 @@ export const stories: Story[] = [
     id: '43a0efc0-08a1-416c-b3f5-8b1c28ddc758',
   },
   {
-    clicks: 1750,
+    clicks: 1753,
     // eslint-disable-next-line prettier/prettier
     text: 'This is your 1000th time touching a spiked thing, and we aren\'t even a bit closer to an end.',
     id: 'c8716bd5-e1f3-4aa3-8935-cc4124480e8a',
   },
   {
     clicks: 1800,
-    text: 'It looks like the leaking from your countless holes is nourishing any living being you touch, because our little friend stopped being "little" quite a bit of time ago.',
+    text: 'It looks like blood leaking from your countless puncture holes is nourishing any living being you touch, because our little friend stopped being "little" quite a bit of time ago',
     id: '8b5a6012-1dad-4441-8844-072f7e318f02',
   },
   {
@@ -228,7 +228,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 2050,
-    text: 'Look at this beautiful roll of barbed wire. So pure, so beautiful... So spikey.',
+    text: 'Look at this beautiful roll of barbed wire. So pure, so metallic... So spikey.',
     id: '76fe0cda-d22d-462c-9a6e-1db220d3942d',
   },
   {
@@ -239,12 +239,12 @@ export const stories: Story[] = [
   },
   {
     clicks: 2150,
-    text: 'Barbed wire, also known as barb wire,[1] is a type of steel fencing wire constructed with sharp edges or points arranged at intervals along the strands. It is used to construct inexpensive fences and is used atop walls surrounding secured property. It is also a major feature of the fortifications in trench warfare (as a wire obstacle).',
+    text: 'Ekhm. "Barbed wire, also known as barb wire,[1] is a type of steel fencing wire constructed with sharp edges or points arranged at intervals along the strands. It is used to construct inexpensive fences and is used atop walls surrounding secured property. It is also a major feature of the fortifications in trench warfare (as a wire obstacle)."',
     id: 'b7e490c3-bf27-4b01-afbe-7d2640bd363f',
   },
   {
     clicks: 2250,
-    text: 'This is Wikipedian definition of a "barbed wire". You can derive from this definition that "barbed wire" is used as a FENCE, OBSTACLE or a part of FORTIFICATION around a SECURED property.',
+    text: 'This is Wikipedian definition of a "barbed wire". You can derive from this definition that "barbed wire" is used as a FENCE, OBSTACLE or a part of FORTIFICATION',
     id: 'dc96c642-6179-447c-8d1c-5e02c731f5d1',
   },
   {
@@ -298,7 +298,7 @@ export const stories: Story[] = [
   {
     clicks: 2750,
     // eslint-disable-next-line prettier/prettier
-    text: 'It\'s a razor wire instead of a barbed one, so it\'s more like slicey-slicey than spikey-spikey, but it doesn\'t make any difference, as you are still going to touch it.',
+    text: 'It\'s a razor wire instead of a barbed one, so it\'s more like slicey-slicey than spikey-spikey, but it doesn\'t make any difference, as you are apparently still going to touch it.',
     id: '5d602b7e-3adf-40a4-be52-eb95f4e73e15',
   },
   {
@@ -353,32 +353,32 @@ export const stories: Story[] = [
   },
   {
     clicks: 3250,
+    // eslint-disable-next-line prettier/prettier
+    text: 'A small digression: you already touched items I gave you over three point two thousand times. Now imagine you were turning things to gold instead, for goddamn\'s sake.',
+    id: '04673fa2-200c-4ccf-a7d2-0421ae962cc7',
+  },
+  {
+    clicks: 3300,
     text: 'We would be absolutely filthy rich, given how much you enjoy poking stuff with your fingers. We would become decillionaries.',
     id: 'f561025c-da60-454b-b9ef-278add3f39e5',
   },
   {
-    clicks: 3300,
+    clicks: 3350,
     // eslint-disable-next-line prettier/prettier
     text: 'I\'m not even sure if "decillionare" is an actual word. I don\'t think anyone has amassed this amount of wealth, ever, so there isn\'t even a legit word for that.',
     id: 'b5ee675c-646a-4e78-a0d7-d49632852433',
   },
   {
-    clicks: 3350,
+    clicks: 3400,
     // eslint-disable-next-line prettier/prettier
     text: 'But nooooo, your superpower is to make spikey things bigger and bigger, hurting yourself in the process. That\'s most likely the shittiest superpower I\'ve ever heard of.',
     id: '75e45db6-2575-40e6-bccd-374db589f8f8',
   },
   {
-    clicks: 3400,
-    // eslint-disable-next-line prettier/prettier
-    text: '...unless... The thing you touch does not need to be spikey. We did\'t actually test anything with no spikes at all.',
-    id: 'e7d3a59a-9ced-4314-820a-62efb0960e67',
-  },
-  {
     clicks: 3450,
     // eslint-disable-next-line prettier/prettier
-    text: 'A small digression: you already touched items I gave you almost three and a half thousand times. Now imagine you were turning things to gold instead, for goddamn\'s sake.',
-    id: '04673fa2-200c-4ccf-a7d2-0421ae962cc7',
+    text: '...unless... The thing you touch does not need to be spikey. We didn\'t actually test anything with no spikes at all.',
+    id: 'e7d3a59a-9ced-4314-820a-62efb0960e67',
   },
   {
     clicks: 3500,
@@ -399,7 +399,7 @@ export const stories: Story[] = [
   {
     clicks: 3650,
     // eslint-disable-next-line prettier/prettier
-    text: 'This seems harmless enough. Let\'s give it a try.',
+    text: 'Look, this seems harmless enough. Let\'s give it a try.',
     id: 'b0f2cbb3-cf03-4bdf-b94b-43076f0bbd92',
   },
   {
@@ -420,7 +420,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 3850,
-    text: 'Nope, it still stays the same size. Maybe it needs to be a biological matter after all.',
+    text: 'Nope, it still stays the same size. Maybe it does need to be a biological matter after all.',
     id: '52e7d37e-0490-4a67-a3bf-3aaef9c0e9a6',
   },
   {
@@ -435,6 +435,7 @@ export const stories: Story[] = [
     id: '7c44ab3b-b341-4b48-9e8b-946db36e9712',
   },
   {
+    // TODO add audio for this one and the rest!
     clicks: 4000,
     text: '...this is... not how you pet a cat. Petting a cat is done via gentle strokes in direction from head towards tail, alongside spine. What you\'re doing is "poking a cat".',
     id: '9d3cc9cf-2f4e-4814-bf6c-05f0efeb61ff',
