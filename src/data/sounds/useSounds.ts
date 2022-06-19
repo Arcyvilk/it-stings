@@ -11,6 +11,7 @@ export const sounds = {
 
 type UseSounds = {
   playClickSound: () => void;
+  playStorySound: (storyId?: string) => void;
 };
 
 export const useSounds = (): UseSounds => {
@@ -32,5 +33,19 @@ export const useSounds = (): UseSounds => {
     }
   };
 
-  return { playClickSound };
+  const playStorySound = async (storyId?: string) => {
+    if (!storyId) {
+      return;
+    }
+    try {
+      const sound = await import(`assets/sounds/story/${storyId}.mp3`);
+      if (sound) {
+        new Audio(sound.default).play();
+      }
+    } catch (e) {
+      /** the file most likely does not exist */
+    }
+  };
+
+  return { playClickSound, playStorySound };
 };
