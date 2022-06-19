@@ -45,6 +45,10 @@ const Wrapper = styled(Flex)`
 
 const Trophies = styled(Flex)`
   width: 100%;
+  height: 95%;
+  overflow: scroll;
+  box-sizing: border-box;
+  width: 100%;
   & > * {
     margin-top: 8px;
   }
