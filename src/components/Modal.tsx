@@ -9,10 +9,11 @@ type Props = {
   visible: boolean;
   setVisible: (visible: boolean) => void;
   children: React.ReactNode;
+  fullScreen?: boolean;
 };
 
 export const Modal = (props: Props): JSX.Element => {
-  const { visible, setVisible, children } = props;
+  const { visible, setVisible, children, fullScreen } = props;
   const { theme } = useAppContext();
 
   const onModalMaskClick = () => {
@@ -25,7 +26,10 @@ export const Modal = (props: Props): JSX.Element => {
 
   return (
     <ModalWrapper isVisible={visible} onClick={onModalMaskClick}>
-      <StyledModal theme={theme} onClick={disablePropagation}>
+      <StyledModal
+        theme={theme}
+        fullScreen={fullScreen}
+        onClick={disablePropagation}>
         {children}
       </StyledModal>
     </ModalWrapper>
@@ -55,13 +59,24 @@ const ModalWrapper = styled.div.attrs(
   z-index: ${ZINDEX.MODAL};
 `;
 
-const StyledModal = styled.div.attrs(({ theme }: { theme: Theme }) => {
-  return {
-    style: { backgroundColor: theme.primaryBg, color: theme.primaryText },
-  };
-})<{ theme: Theme }>`
+type StyledModalProps = { theme: Theme; fullScreen?: boolean };
+
+const StyledModal = styled.div.attrs(
+  ({ theme, fullScreen }: StyledModalProps) => {
+    return {
+      style: {
+        backgroundColor: theme.primaryBg,
+        color: theme.primaryText,
+        height: fullScreen ? '100%' : 'auto',
+        maxHeight: fullScreen ? '100%' : 'auto',
+      },
+    };
+  },
+)<StyledModalProps>`
   width: 100%;
-  height: 100%;
-  padding: 8px;
+  height: auto;
+  max-height: 100%;
+  padding: 12px;
   box-sizing: border-box;
+  border-radius: 8px;
 `;

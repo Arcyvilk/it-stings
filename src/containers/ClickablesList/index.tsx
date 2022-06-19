@@ -13,7 +13,10 @@ export const ClickablesList = (): JSX.Element => {
   const { unlockedClickables } = useClickables();
 
   return (
-    <Modal visible={showClickablesList} setVisible={setShowClickablesList}>
+    <Modal
+      fullScreen
+      visible={showClickablesList}
+      setVisible={setShowClickablesList}>
       <Wrapper column>
         <Title level={2}>
           <FontAwesomeIcon

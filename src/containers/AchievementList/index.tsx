@@ -14,7 +14,10 @@ export const AchievementList = (): JSX.Element => {
   const { unlockedAchievements } = useAchievements();
 
   return (
-    <Modal visible={showAchievementsList} setVisible={setShowAchievementsList}>
+    <Modal
+      visible={showAchievementsList}
+      setVisible={setShowAchievementsList}
+      fullScreen>
       <Wrapper column>
         <Title level={2}>
           <FontAwesomeIcon icon={faTrophy} style={{ marginRight: '8px' }} />
