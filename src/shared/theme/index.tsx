@@ -12,22 +12,22 @@ export type Theme = {
 export const theme: { light: Theme; dark: Theme } = {
   light: {
     primaryBg: '#DBC2CF',
-    secondaryBg: '#9FA2B2',
-    tertiaryBg: '#7d8197',
+    secondaryBg: '#e6d2dc',
+    tertiaryBg: '#a18d98',
     dangerBg: '#d692a1',
     primaryText: '#16262E',
     secondaryText: '#2E4756',
-    tertiaryText: '#19262e',
+    tertiaryText: '#0d161c',
     dangerText: '#30141b',
   },
   dark: {
     primaryBg: '#16262E',
     secondaryBg: '#2E4756',
-    tertiaryBg: '#19262e',
+    tertiaryBg: '#0d161c',
     dangerBg: '#30141b',
     primaryText: '#DBC2CF',
-    secondaryText: '#9FA2B2',
-    tertiaryText: '#7d8197',
+    secondaryText: '#e6d2dc',
+    tertiaryText: '#a18d98',
     dangerText: '#d692a1',
   },
 };
