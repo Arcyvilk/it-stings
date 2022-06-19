@@ -1,7 +1,7 @@
 import { ouchSound } from 'assets/sounds/ouch';
 import { angryCatSound } from 'assets/sounds/angryCat';
 
-import { useStoryModeContext } from 'shared/context';
+import { useAppContext, useStoryModeContext } from 'shared/context';
 import { Sounds } from 'data/clickables';
 
 export const sounds = {
@@ -15,6 +15,7 @@ type UseSounds = {
 };
 
 export const useSounds = (): UseSounds => {
+  const { volumeOn } = useAppContext();
   const { activeClickable } = useStoryModeContext();
 
   const getRandomSound = (soundName: Sounds): string => {
@@ -26,6 +27,9 @@ export const useSounds = (): UseSounds => {
   };
 
   const playClickSound = () => {
+    if (!volumeOn) {
+      return;
+    }
     const clickSoundName = activeClickable.clickSound;
     if (clickSoundName) {
       const randomClickSound = getRandomSound(clickSoundName);
@@ -34,7 +38,7 @@ export const useSounds = (): UseSounds => {
   };
 
   const playStorySound = async (storyId?: string) => {
-    if (!storyId) {
+    if (!volumeOn || !storyId) {
       return;
     }
     try {

@@ -7,6 +7,8 @@ type AppContextType = {
   setThemeType: (themeType: ThemeType) => void;
   theme: Theme;
   setTheme: (theme: Theme) => void;
+  volumeOn: boolean;
+  setVolumeOn: (volumeOn: boolean) => void;
   showSettingsModal: boolean;
   setShowSettingsModal: (showClickablesList: boolean) => void;
 };
@@ -18,6 +20,7 @@ export const AppContextProvider = ({ children }: Props): JSX.Element => {
   const defaultThemeType: ThemeType = ThemeType.DARK;
   const [themeType, setThemeType] = useState<ThemeType>(defaultThemeType);
   const [theme, setTheme] = useState<Theme>(mainTheme[defaultThemeType]);
+  const [volumeOn, setVolumeOn] = useState<boolean>(true);
   const [showSettingsModal, setShowSettingsModal] = useState<boolean>(false);
 
   useEffect(() => {
@@ -29,6 +32,8 @@ export const AppContextProvider = ({ children }: Props): JSX.Element => {
     setThemeType,
     theme,
     setTheme,
+    volumeOn,
+    setVolumeOn,
     showSettingsModal,
     setShowSettingsModal,
   };

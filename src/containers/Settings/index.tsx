@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCog,
   faExclamationTriangle,
-  faFileAudio,
   faPowerOff,
   faSun,
+  faMoon,
+  faVolumeUp,
+  faVolumeMute,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { ThemeType } from 'shared/types';
@@ -18,6 +20,8 @@ export const Settings = (): JSX.Element => {
     theme,
     themeType,
     setThemeType,
+    volumeOn,
+    setVolumeOn,
     showSettingsModal,
     setShowSettingsModal,
   } = useAppContext();
@@ -40,6 +44,7 @@ export const Settings = (): JSX.Element => {
   const onDisableAudioClick = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => {
+    setVolumeOn(!volumeOn);
     event.stopPropagation();
   };
 
@@ -53,8 +58,16 @@ export const Settings = (): JSX.Element => {
       </Wrapper>
       <Flex column align>
         <Buttons align justify>
-          <IconButton giant icon={faSun} onClick={onChangeThemeClick} />
-          <IconButton giant icon={faFileAudio} onClick={onDisableAudioClick} />
+          <IconButton
+            giant
+            icon={themeType === ThemeType.DARK ? faSun : faMoon}
+            onClick={onChangeThemeClick}
+          />
+          <IconButton
+            giant
+            icon={volumeOn ? faVolumeUp : faVolumeMute}
+            onClick={onDisableAudioClick}
+          />
         </Buttons>
         <Title level={3} style={{ color: theme.dangerText }}>
           <FontAwesomeIcon icon={faExclamationTriangle} />
