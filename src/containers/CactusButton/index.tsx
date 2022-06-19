@@ -19,6 +19,9 @@ export const CactusButton = (): JSX.Element => {
   }, [clicks]);
 
   const onTouchableClick = () => {
+    if (activeClickable.clickSound) {
+      playClickSound();
+    }
     if (clicks >= MAX_CLICKS) {
       setClicks(MAX_CLICKS);
       toast.warning(
@@ -27,9 +30,6 @@ export const CactusButton = (): JSX.Element => {
       return;
     }
     setClicks(clicks + 1);
-    if (activeClickable.clickSound) {
-      playClickSound();
-    }
   };
 
   return (
