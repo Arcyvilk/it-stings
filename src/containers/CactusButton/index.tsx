@@ -32,6 +32,9 @@ export const CactusButton = (): JSX.Element => {
     setClicks(clicks + 1);
   };
 
+  if (!activeClickable) {
+    return <span>Loading...</span>;
+  }
   return (
     <Bounce duration={1}>
       <Cactus

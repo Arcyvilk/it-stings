@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { useStoryModeContext } from 'shared/context';
 import { Story, stories } from './story';
 
-type UseStory = { getStory: () => string; MAX_CLICKS: number };
+type UseStory = { getStory: () => Story | undefined; MAX_CLICKS: number };
 
 export const useStory = (): UseStory => {
   const { clicks } = useStoryModeContext();
@@ -15,7 +15,7 @@ export const useStory = (): UseStory => {
   const MAX_CLICKS = sortedStories[0].clicks;
 
   const getStory = () => {
-    return sortedStories.find(entry => entry.clicks <= clicks)?.text ?? '';
+    return sortedStories.find(entry => entry.clicks <= clicks);
   };
 
   return { getStory, MAX_CLICKS };
