@@ -67,6 +67,13 @@ export const achievements: Achievement[] = [
     img: '',
   },
   {
+    id: '6666_touches',
+    name: '6666',
+    description: '6666',
+    clicks: 6666,
+    img: '',
+  },
+  {
     id: '9001_touches',
     // eslint-disable-next-line prettier/prettier
     name: 'IT\'S OVER NINE THOUSAND',
