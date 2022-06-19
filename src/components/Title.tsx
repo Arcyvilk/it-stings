@@ -4,13 +4,14 @@ import styled from 'styled-components';
 type Props = {
   level: 1 | 2 | 3 | 4 | 5;
   children: React.ReactNode;
+  style?: React.CSSProperties;
 };
 
 export const Title = (props: Props): JSX.Element => {
-  const { level, children } = props;
+  const { level, children, style = {} } = props;
 
   return (
-    <Wrapper>
+    <Wrapper style={style}>
       {level === 1 && <h1>{children}</h1>}
       {level === 2 && <h2>{children}</h2>}
       {level === 3 && <h3>{children}</h3>}
@@ -20,7 +21,11 @@ export const Title = (props: Props): JSX.Element => {
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled.div.attrs(
+  ({ style }: { style: React.CSSProperties }) => {
+    return { style };
+  },
+)`
   & > * {
     margin: 0;
     padding: 0;
