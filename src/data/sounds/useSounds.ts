@@ -1,9 +1,12 @@
 import { ouchSound } from 'assets/sounds/ouch';
+import { angryCatSound } from 'assets/sounds/angryCat';
+
 import { useStoryModeContext } from 'shared/context';
 import { Sounds } from 'data/clickables';
 
 export const sounds = {
   ouch: ouchSound,
+  angryCat: angryCatSound,
 };
 
 type UseSounds = {
@@ -15,7 +18,7 @@ export const useSounds = (): UseSounds => {
 
   const getRandomSound = (soundName: Sounds): string => {
     const soundList = sounds[soundName];
-    const min = Math.ceil(1);
+    const min = Math.ceil(0);
     const max = Math.floor(soundList.length);
     const soundIndex = Math.floor(Math.random() * max) + min;
     return soundList[soundIndex];

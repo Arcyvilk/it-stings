@@ -9,6 +9,7 @@ import angryCat from 'assets/images/cacti/angryCat.png';
 
 export enum Sounds {
   OUCH = 'ouch',
+  ANGRY_CAT = 'angryCat',
 }
 
 export type Clickable = {
@@ -106,7 +107,7 @@ export const clickables: Clickable[] = [
     description:
       'Even the most gentle of all feline family will get annoyed when poked one time too much.',
     src: angryCat,
-    clickSound: Sounds.OUCH,
+    clickSound: Sounds.ANGRY_CAT,
     clicks: 2420,
     minSize: 100,
     growth: 7,
