@@ -48,7 +48,7 @@ const Trophy = styled(Flex).attrs(({ theme }: { theme: Theme }) => {
   return { style: { backgroundColor: theme.secondaryBg } };
 })`
   align-items: center;
-  flex-grow: 1;
+  width: 100%;
   padding: 8px;
   box-sizing: border-box;
 `;
