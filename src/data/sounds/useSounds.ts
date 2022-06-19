@@ -39,7 +39,7 @@ export const useSounds = (): UseSounds => {
     }
     try {
       const sound = await import(`assets/sounds/story/${storyId}.mp3`);
-      if (sound) {
+      if (sound?.default) {
         new Audio(sound.default).play();
       }
     } catch (e) {
