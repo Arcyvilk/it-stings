@@ -8,13 +8,15 @@ import { Theme } from 'shared/theme';
 type Props = {
   icon: IconLookup;
   danger?: boolean;
-  onClick?: () => void;
+  giant?: boolean;
+  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 };
 
 export const IconButton = (props: Props): JSX.Element => {
   const {
     icon,
     danger = false,
+    giant = false,
     onClick = () => {
       /** */
     },
@@ -22,26 +24,37 @@ export const IconButton = (props: Props): JSX.Element => {
   const { theme } = useAppContext();
 
   return (
-    <StyledButton onClick={onClick} theme={theme} danger={danger}>
+    <StyledButton onClick={onClick} theme={theme} danger={danger} giant={giant}>
       <FontAwesomeIcon icon={icon} />
     </StyledButton>
   );
 };
 
+type StyledProps = {
+  theme: Theme;
+  danger: boolean;
+  giant: boolean;
+};
+
 const StyledButton = styled.div.attrs(
-  ({ theme, danger }: { theme: Theme; danger: boolean }) => {
+  ({ theme, danger, giant }: StyledProps) => {
+    const size = giant ? 100 : 48;
+    const fontSize = giant ? '4em' : '1.5em';
+    const borderRadius = giant ? 16 : 4;
+
     return {
       style: {
-        backgroundColor: danger ? theme.dangerBg : theme.tertiaryBg,
-        color: danger ? theme.dangerText : theme.tertiaryText,
+        width: `${size}px`,
+        height: `${size}px`,
+        fontSize,
+        borderRadius: `${borderRadius}px`,
+        backgroundColor: danger ? theme.dangerBg : theme.secondaryBg,
+        color: danger ? theme.dangerText : theme.secondaryText,
       },
     };
   },
-)<{ theme: Theme; danger: boolean }>`
+)<StyledProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 4px;
 `;
