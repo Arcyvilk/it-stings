@@ -48,14 +48,14 @@ export const achievements: Achievement[] = [
     id: 'happy_harry',
     name: 'Soft kitty, warm kitty...',
     description: 'You discovered Harry.',
-    clicks: 3950,
+    clicks: 3900,
     img: '',
   },
   {
     id: 'angry_harry',
     name: '...little ball of claws',
     description: 'You made Harry angry.',
-    clicks: 4150,
+    clicks: 4140,
     img: '',
   },
   {

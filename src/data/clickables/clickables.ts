@@ -108,7 +108,7 @@ export const clickables: Clickable[] = [
       'Even the most gentle of all feline family will get annoyed when poked one time too much.',
     src: angryCat,
     clickSound: Sounds.ANGRY_CAT,
-    clicks: 4150,
+    clicks: 4140,
     minSize: 100,
     growth: 7,
     unlockable: true,
