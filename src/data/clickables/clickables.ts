@@ -33,7 +33,7 @@ export const clickables: Clickable[] = [
     clickSound: Sounds.OUCH,
     clicks: 0,
     minSize: 100,
-    growth: 1,
+    growth: 0.8,
     unlockable: true,
   },
   {
@@ -44,7 +44,7 @@ export const clickables: Clickable[] = [
     clickSound: Sounds.OUCH,
     clicks: 1200,
     minSize: 100,
-    growth: 1,
+    growth: 0.8,
     unlockable: true,
   },
   {
@@ -55,7 +55,7 @@ export const clickables: Clickable[] = [
     clickSound: Sounds.OUCH,
     clicks: 2000,
     minSize: 100,
-    growth: 2,
+    growth: 1.5,
     unlockable: true,
   },
   {
@@ -67,7 +67,7 @@ export const clickables: Clickable[] = [
     clickSound: Sounds.OUCH,
     clicks: 2650,
     minSize: 100,
-    growth: 3,
+    growth: 2.5,
     unlockable: true,
   },
   {
@@ -78,7 +78,7 @@ export const clickables: Clickable[] = [
     clickSound: Sounds.OUCH,
     clicks: 3000,
     minSize: 100,
-    growth: 1.5,
+    growth: 0.8,
     unlockable: true,
   },
   {
