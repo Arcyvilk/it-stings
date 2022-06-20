@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFingerprint } from '@fortawesome/free-solid-svg-icons';
+import {
+  faWindowClose,
+  faFingerprint,
+  faDumpsterFire,
+  faRedo,
+  faRedoAlt,
+} from '@fortawesome/free-solid-svg-icons';
 
-import { Flex, Modal, Title } from 'components';
+import { Flex, IconButton, Modal, Title } from 'components';
 import { TrophyCabinet } from 'containers';
 import { useStoryModeContext } from 'shared/context';
 import { Clickable, useClickables } from 'data';
@@ -26,7 +32,7 @@ export const ClickablesList = (): JSX.Element => {
       fullScreen
       visible={showClickablesList}
       setVisible={setShowClickablesList}>
-      <Wrapper column>
+      <Wrapper align>
         <Title level={2}>
           <FontAwesomeIcon
             icon={faFingerprint}
@@ -42,8 +48,13 @@ export const ClickablesList = (): JSX.Element => {
             title={clickable.name}
             description={clickable.description}
             img={clickable.src}
-            onClick={(e: React.MouseEvent<HTMLDivElement>) =>
-              onClickableClick(e, clickable)
+            bonus={
+              <IconButton
+                icon={faRedoAlt}
+                onClick={(e: React.MouseEvent<HTMLDivElement>) =>
+                  onClickableClick(e, clickable)
+                }
+              />
             }
           />
         ))}
@@ -53,8 +64,11 @@ export const ClickablesList = (): JSX.Element => {
 };
 
 const Wrapper = styled(Flex)`
+  justify-content: space-between;
   padding-bottom: 4px;
   border-bottom: 1px solid;
+  box-sizing: border-box;
+  width: 100%;
 `;
 
 const Trophies = styled(Flex)`

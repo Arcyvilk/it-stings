@@ -13,6 +13,7 @@ type Props = {
   description: string;
   img?: string;
   icon?: IconProp;
+  bonus?: React.ReactNode;
   onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 };
 
@@ -22,6 +23,7 @@ export const TrophyCabinet = (props: Props): JSX.Element => {
     description,
     img,
     icon,
+    bonus = null,
     onClick = () => {
       /** */
     },
@@ -35,20 +37,17 @@ export const TrophyCabinet = (props: Props): JSX.Element => {
           <FontAwesomeIcon icon={icon} />
         </PicWrapper>
       )}
-      {img && (
-        <PicWrapper theme={theme}>
-          <Picture src={img} />
-        </PicWrapper>
-      )}
+      {img && <Picture src={img} />}
       {!icon && !img && (
         <PicWrapper theme={theme}>
           <FontAwesomeIcon icon={faQuestionCircle} />
         </PicWrapper>
       )}
-      <Flex column>
+      <Flex column style={{ flex: '1 1 auto' }}>
         <Title level={3}>{title}</Title>
         <div>{description}</div>
       </Flex>
+      {bonus}
     </Trophy>
   );
 };
@@ -79,8 +78,12 @@ const PicWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
 `;
 
 const Picture = styled.img`
-  max-width: 56px;
-  max-height: 56px;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  box-sizing: border-box;
+  margin-right: 8px;
   object-fit: contain;
   filter: drop-shadow(0 0 7px #000);
 `;
