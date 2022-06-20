@@ -67,16 +67,11 @@ interface CactusProps {
 }
 
 const Cactus = styled.img.attrs(({ growth, naturalSize }: CactusProps) => {
-  const style: React.CSSProperties = {
-    maxWidth: growth,
-    maxHeight: growth,
-  };
+  const style: React.CSSProperties = {};
   if (naturalSize.width >= naturalSize.height) {
-    const scale = naturalSize.width / growth;
-    style.maxHeight = naturalSize.height * scale;
+    style.width = growth;
   } else {
-    const scale = naturalSize.height / growth;
-    style.maxWidth = naturalSize.width * scale;
+    style.height = growth;
   }
   return { style };
 })<CactusProps>`
