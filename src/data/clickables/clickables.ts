@@ -146,7 +146,7 @@ export const clickables: Clickable[] = [
     description:
       'Something to soak up the blood leaking from all of your cactus needle wounds.',
     src: bandageRoll,
-    clicks: 4900,
+    clicks: 4930,
     minSize: 200,
     growth: 0,
   },
@@ -176,7 +176,7 @@ export const clickables: Clickable[] = [
     name: 'Wikipedia',
     description: 'Why are you touching a Wikipedia logo?',
     src: wikipedia,
-    clicks: 5710,
+    clicks: 6150,
     minSize: 150,
     growth: 0,
   },
