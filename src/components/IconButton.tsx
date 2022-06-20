@@ -55,6 +55,7 @@ const StyledButton = styled.div.attrs(
   },
 )<StyledProps>`
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
 `;
