@@ -387,7 +387,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 3800,
-    text: 'Let’s give it a few more touches. For science.',
+    text: 'Can you try a few more times with a higher intensity of poking?',
     id: '9e3e0658-c47c-4c2a-9ad7-8efb0a680dac',
   },
   {
@@ -402,18 +402,17 @@ export const stories: Story[] = [
   },
   {
     clicks: 3930,
-    text: 'This is Harry. He’s a very nice kitty. You are allowed to pet him. For science.',
+    text: 'This is Harry. He’s a very nice kitty. You are allowed to pet him. Scientifically.',
     id: '7c44ab3b-b341-4b48-9e8b-946db36e9712',
   },
   {
-    // TODO add audio for this one and the rest!
     clicks: 3980,
-    text: '...this is... not how you pet a cat. Petting a cat is done via gentle strokes in direction from head towards tail, alongside spine. What you’re doing is "poking a cat".',
+    text: '...this is... not how you pet a cat. Petting a cat is done via gentle strokes in direction from head towards tail, alongside spine. What you’re doing is called "poking a cat".',
     id: '9d3cc9cf-2f4e-4814-bf6c-05f0efeb61ff',
   },
   {
     clicks: 4040,
-    text: 'Poking a cat does not seem to wield any discernable results towards its unusual growth. Interesting, interesting.',
+    text: 'Poking a cat does not seem to wield any discernable results towards its unusual growth. Interesting, very interesting.',
     id: 'e60248bf-b4c7-475a-b850-da8311176a72',
   },
   {
@@ -453,7 +452,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 4360,
-    text: 'Oh boy... Harry is now really angry. And pretty much the size of a lion.',
+    text: 'Oh boy... Harry is really angry now. And pretty much the size of a lion.',
     id: 'f472f922-b4cc-4480-a26a-53c30e19ff4d',
   },
   {
@@ -462,6 +461,7 @@ export const stories: Story[] = [
     id: '3f112598-54d7-4cc7-a3bf-a9eaca92c84b',
   },
   {
+    // TODO caption this
     clicks: 4410,
     text: '*distant angry meows and people screaming*',
     id: '9d6b7c52-3fb5-49d6-93e4-2ea0d38e4f45',
@@ -473,7 +473,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 4510,
-    text: 'Our previous talk about king Midas inspired me to try something... interesting. It’s highly improbable that it will work, but I really want to try this one.',
+    text: 'Our previous talk about king Midas inspired me to try something... interesting. It’s highly improbable that it will work, but I really want to try.',
     id: 'ad2d3622-9ff2-4875-8b0a-fe4009cfbbce',
   },
   {
@@ -498,8 +498,8 @@ export const stories: Story[] = [
   },
   {
     clicks: 4760,
-    text: '...poke it just a couple of times more. Please.',
-    id: 'c01700db-f64c-4cd8-a587-b6bc1a695fdc',
+    text: '...please poke it just a couple of times more. Please.',
+    id: 'ae06f004-13da-4799-8bea-456b1c1506b4',
   },
   {
     clicks: 4810,
@@ -508,7 +508,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 4850,
-    text: 'You still managed to fail my expectations even though I didn’t have any.',
+    text: 'You somehow managed to fail my expectations even though I didn’t have any.',
     id: '636b0b51-962e-4ef0-99b7-8ca1d48be473',
   },
   {
@@ -567,6 +567,7 @@ export const stories: Story[] = [
     id: '00beb734-cfb9-4520-bc1e-ba5689e2fb1d',
   },
   {
+    // TODO audio after that
     clicks: 5430,
     text: 'Well. Whatever. It IS a food item, and it DOES grow under your touch. Even if its smell is pungent we are still doing a good deed to the world, right?',
     id: 'a3b9bf37-a180-46eb-ba9e-9670a12322f3',
