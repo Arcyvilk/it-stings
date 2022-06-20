@@ -6,11 +6,20 @@ import { faFingerprint } from '@fortawesome/free-solid-svg-icons';
 import { Flex, Modal, Title } from 'components';
 import { TrophyCabinet } from 'containers';
 import { useStoryModeContext } from 'shared/context';
-import { useClickables } from 'data';
+import { Clickable, useClickables } from 'data';
 
 export const ClickablesList = (): JSX.Element => {
-  const { showClickablesList, setShowClickablesList } = useStoryModeContext();
+  const { setClicks, showClickablesList, setShowClickablesList } =
+    useStoryModeContext();
   const { unlockedClickables } = useClickables();
+
+  const onClickableClick = (
+    e: React.MouseEvent<HTMLDivElement>,
+    clickable: Clickable,
+  ) => {
+    e.stopPropagation();
+    setClicks(clickable.clicks);
+  };
 
   return (
     <Modal
@@ -33,6 +42,9 @@ export const ClickablesList = (): JSX.Element => {
             title={clickable.name}
             description={clickable.description}
             img={clickable.src}
+            onClick={(e: React.MouseEvent<HTMLDivElement>) =>
+              onClickableClick(e, clickable)
+            }
           />
         ))}
       </Trophies>

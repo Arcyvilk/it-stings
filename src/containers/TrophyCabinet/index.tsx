@@ -13,14 +13,23 @@ type Props = {
   description: string;
   img?: string;
   icon?: IconProp;
+  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 };
 
 export const TrophyCabinet = (props: Props): JSX.Element => {
-  const { title, description, img, icon } = props;
+  const {
+    title,
+    description,
+    img,
+    icon,
+    onClick = () => {
+      /** */
+    },
+  } = props;
   const { theme } = useAppContext();
 
   return (
-    <Trophy theme={theme}>
+    <Trophy theme={theme} onClick={onClick}>
       {icon && (
         <PicWrapper theme={theme}>
           <FontAwesomeIcon icon={icon} />
@@ -70,7 +79,8 @@ const PicWrapper = styled.div.attrs(({ theme }: { theme: Theme }) => {
 `;
 
 const Picture = styled.img`
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 56px;
+  max-height: 56px;
+  object-fit: contain;
   filter: drop-shadow(0 0 7px #000);
 `;
