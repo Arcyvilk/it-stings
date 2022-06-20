@@ -1,13 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faWindowClose,
-  faFingerprint,
-  faDumpsterFire,
-  faRedo,
-  faRedoAlt,
-} from '@fortawesome/free-solid-svg-icons';
+import { faFingerprint, faRedoAlt } from '@fortawesome/free-solid-svg-icons';
 
 import { Flex, IconButton, Modal, Title } from 'components';
 import { TrophyCabinet } from 'containers';
