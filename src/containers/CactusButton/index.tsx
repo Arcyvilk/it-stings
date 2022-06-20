@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import { useStoryModeContext } from 'shared/context';
@@ -6,12 +6,19 @@ import { Bounce } from 'components';
 import { useStory, useAchievements, useClickables, useSounds } from 'data';
 import { toast } from 'react-toastify';
 
+type NaturalSize = { width: number; height: number };
+
 export const CactusButton = (): JSX.Element => {
   const { clicks, setClicks, activeClickable } = useStoryModeContext();
   const { MAX_CLICKS } = useStory();
   const { playClickSound } = useSounds();
   const { setClickable } = useClickables();
   const { unlockAchievement } = useAchievements();
+
+  const [naturalSize, setNaturalSize] = useState<NaturalSize>({
+    width: 200,
+    height: 200,
+  });
 
   useEffect(() => {
     setClickable();
@@ -32,6 +39,12 @@ export const CactusButton = (): JSX.Element => {
     setClicks(clicks + 1);
   };
 
+  const onImgOnload: React.ReactEventHandler<HTMLImageElement> = event => {
+    const { naturalWidth: width, naturalHeight: height } =
+      event.target as HTMLImageElement;
+    setNaturalSize({ width, height });
+  };
+
   if (!activeClickable) {
     return <span>Loading...</span>;
   }
@@ -39,19 +52,34 @@ export const CactusButton = (): JSX.Element => {
     <Bounce duration={1}>
       <Cactus
         src={activeClickable.src}
-        width={activeClickable.width}
+        naturalSize={naturalSize}
+        growth={activeClickable.width}
+        onLoad={onImgOnload}
         onClick={onTouchableClick}
       />
     </Bounce>
   );
 };
 
-type CactusProps = {
-  width: number;
-};
+interface CactusProps {
+  growth: number;
+  naturalSize: NaturalSize;
+}
 
-const Cactus = styled.img.attrs(({ width }) => {
-  return { style: { width } };
+const Cactus = styled.img.attrs(({ growth, naturalSize }: CactusProps) => {
+  const style: React.CSSProperties = {
+    maxWidth: growth,
+    maxHeight: growth,
+  };
+  if (naturalSize.width >= naturalSize.height) {
+    const scale = naturalSize.width / growth;
+    style.maxHeight = naturalSize.height * scale;
+  } else {
+    const scale = naturalSize.height / growth;
+    style.maxWidth = naturalSize.width * scale;
+  }
+  return { style };
 })<CactusProps>`
   cursor: pointer;
+  object-fit: contain;
 `;
