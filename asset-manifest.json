@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/it-stings/static/css/main.31b1249f.chunk.css",
-    "main.js": "/it-stings/static/js/main.a3aea20b.chunk.js",
-    "main.js.map": "/it-stings/static/js/main.a3aea20b.chunk.js.map",
+    "main.js": "/it-stings/static/js/main.c18010c6.chunk.js",
+    "main.js.map": "/it-stings/static/js/main.c18010c6.chunk.js.map",
     "runtime-main.js": "/it-stings/static/js/runtime-main.7e74a59f.js",
     "runtime-main.js.map": "/it-stings/static/js/runtime-main.7e74a59f.js.map",
     "static/css/2.b8fe46b5.chunk.css": "/it-stings/static/css/2.b8fe46b5.chunk.css",
@@ -367,7 +367,7 @@
     "static/media/d24407b3-9cc4-421e-8de4-1d9a8799a289.mp3": "/it-stings/static/media/d24407b3-9cc4-421e-8de4-1d9a8799a289.e6a42825.mp3",
     "static/media/d3fdfd8a-0cea-4426-b303-5c3c7eeeab23.mp3": "/it-stings/static/media/d3fdfd8a-0cea-4426-b303-5c3c7eeeab23.1da9dd59.mp3",
     "static/media/dc96c642-6179-447c-8d1c-5e02c731f5d1.mp3": "/it-stings/static/media/dc96c642-6179-447c-8d1c-5e02c731f5d1.2422a06e.mp3",
-    "static/media/durianFruit.c5a8c99c.png": "/it-stings/static/media/durianFruit.c5a8c99c.png",
+    "static/media/durianFruit.c6a7e773.png": "/it-stings/static/media/durianFruit.c6a7e773.png",
     "static/media/e60248bf-b4c7-475a-b850-da8311176a72.mp3": "/it-stings/static/media/e60248bf-b4c7-475a-b850-da8311176a72.267277c5.mp3",
     "static/media/e7d3a59a-9ced-4314-820a-62efb0960e67.mp3": "/it-stings/static/media/e7d3a59a-9ced-4314-820a-62efb0960e67.b14a5f21.mp3",
     "static/media/ed58ad3a-07db-4ffa-9b1e-fec012e31848.mp3": "/it-stings/static/media/ed58ad3a-07db-4ffa-9b1e-fec012e31848.c2006c22.mp3",
@@ -382,7 +382,7 @@
     "static/media/fc2fd91b-8cde-40d1-82d7-5f59e70e593c.mp3": "/it-stings/static/media/fc2fd91b-8cde-40d1-82d7-5f59e70e593c.9d93b625.mp3",
     "static/media/fd26c646-22c5-484a-87b1-4a18ca413bcd.mp3": "/it-stings/static/media/fd26c646-22c5-484a-87b1-4a18ca413bcd.6591ec0a.mp3",
     "static/media/fe65b286-2fa5-430b-ac7b-feb052c48488.mp3": "/it-stings/static/media/fe65b286-2fa5-430b-ac7b-feb052c48488.5bb250c7.mp3",
-    "static/media/goldBar.1c7f74aa.png": "/it-stings/static/media/goldBar.1c7f74aa.png",
+    "static/media/goldBar.2816266f.png": "/it-stings/static/media/goldBar.2816266f.png",
     "static/media/happyCat.d7e8782c.png": "/it-stings/static/media/happyCat.d7e8782c.png",
     "static/media/hedgehog.84d16304.png": "/it-stings/static/media/hedgehog.84d16304.png",
     "static/media/razorWire.33af06b0.png": "/it-stings/static/media/razorWire.33af06b0.png",
@@ -395,6 +395,6 @@
     "static/css/2.b8fe46b5.chunk.css",
     "static/js/2.70ef8283.chunk.js",
     "static/css/main.31b1249f.chunk.css",
-    "static/js/main.a3aea20b.chunk.js"
+    "static/js/main.c18010c6.chunk.js"
   ]
 }
