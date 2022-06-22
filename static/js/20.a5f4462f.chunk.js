@@ -1,0 +1,2 @@
+(this["webpackJsonpcra-with-setup-template"]=this["webpackJsonpcra-with-setup-template"]||[]).push([[20],{71:function(t,e,a){"use strict";a.r(e),e.default=a.p+"static/media/1be4739c-8fe1-4c07-82d6-50ae6e874961.361cba14.mp3"}}]);
+//# sourceMappingURL=20.a5f4462f.chunk.js.map
