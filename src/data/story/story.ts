@@ -503,7 +503,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 4810,
-    text: 'Ehh... As expected. Nothing happened.',
+    text: 'Ehh... Nothing happened.',
     id: '5d569601-5c73-44ad-a3b6-4c300586aec2',
   },
   {
@@ -567,7 +567,6 @@ export const stories: Story[] = [
     id: '00beb734-cfb9-4520-bc1e-ba5689e2fb1d',
   },
   {
-    // TODO audio after that
     clicks: 5430,
     text: 'Well. Whatever. It IS a food item, and it DOES grow under your touch. Even if its smell is pungent we are still doing a good deed to the world, right?',
     id: 'a3b9bf37-a180-46eb-ba9e-9670a12322f3',
@@ -654,7 +653,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 6270,
-    text: 'Maybe its font would grow bigger instead. Or server space.',
+    text: 'Maybe the font size would grow bigger instead. Or server space.',
     id: 'caa6be88-90fd-4cee-a197-9950f701aae7',
   },
   {
@@ -679,12 +678,12 @@ export const stories: Story[] = [
   },
   {
     clicks: 6560,
-    text: '...I apologize, I let myself daydream foolishly. Obviously you are unable to touch Wikipedia as it does not exist as a physical entity.',
+    text: '...I apologize, I foolishly let myself daydream. Obviously you are unable to touch Wikipedia as it does not exist as a physical entity.',
     id: '1be4739c-8fe1-4c07-82d6-50ae6e874961',
   },
   {
     clicks: 6610,
-    text: 'I guess I am subconsciously trying to cope with the fact I’m stuck here with you and your useless power, which is unable to gigantify even such trivial matter as 24-karat gold bar.',
+    text: 'I guess I am subconsciously trying to cope with the fact I’m stuck here with you and your useless power, which is unable to gigantify even as trivial item as 24-karat gold bar.',
     id: 'f626f466-6a77-42ee-b993-68599ecd21ab',
   },
   {
