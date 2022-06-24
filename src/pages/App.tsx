@@ -14,6 +14,8 @@ import { MainWrapper } from 'containers';
 import MainGame from 'pages/MainGame';
 import StoryMode from 'pages/StoryMode';
 
+export const APP_NAME = 'it-stings';
+
 export default function App(): JSX.Element {
   const { theme, themeType } = useAppContext();
 
@@ -27,14 +29,11 @@ export default function App(): JSX.Element {
       />
       <Router>
         <Switch>
-          <Route exact path="/it-stings">
+          <Route exact path={`/${APP_NAME}`}>
             <MainGame />
           </Route>
-          <Route exact path="/it-stings/story">
+          <Route exact path={`/${APP_NAME}/story`}>
             <StoryMode />
-          </Route>
-          <Route>
-            <Redirect to="/it-stings" />
           </Route>
         </Switch>
       </Router>
