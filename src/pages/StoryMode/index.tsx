@@ -6,7 +6,7 @@ import {
   CactusStory,
   ClickablesList,
   Settings,
-  StatusBar,
+  StatusBarStory,
 } from 'containers';
 
 import { useAppContext, useStoryModeContext } from 'shared/context';
@@ -22,7 +22,7 @@ export default function StoryMode(): JSX.Element {
       {showAchievementsList && <AchievementList />}
       {showClickablesList && <ClickablesList />}
       {showSettingsModal && <Settings />}
-      <StatusBar />
+      <StatusBarStory />
       <CactusButton />
       <CactusStory />
     </>
