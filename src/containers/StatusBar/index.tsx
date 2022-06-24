@@ -2,34 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Theme } from 'shared/theme';
-import { Flex, IconButton, Title } from 'components';
+import { Flex, Title } from 'components';
 import { useAppContext, useStoryModeContext } from 'shared/context';
-import { faBookOpen, faCog, faTrophy } from '@fortawesome/free-solid-svg-icons';
+import {
+  AchievementsListButton,
+  ClickablesListButton,
+  SettingsButton,
+} from 'containers/ActionButtons';
 
 export const StatusBar = (): JSX.Element => {
-  const { theme, setShowSettingsModal } = useAppContext();
-  const { clicks, setShowAchievementsList, setShowClickablesList } =
-    useStoryModeContext();
-
-  const onShowAchievements = () => {
-    setShowAchievementsList(true);
-  };
-  const onShowClickables = () => {
-    setShowClickablesList(true);
-  };
-  const onShowSettings = () => {
-    setShowSettingsModal(true);
-  };
+  const { theme } = useAppContext();
+  const { clicks } = useStoryModeContext();
 
   return (
     <Bar align theme={theme}>
       <Buttons>
-        <IconButton icon={faTrophy} onClick={onShowAchievements} />
-        <IconButton icon={faBookOpen} onClick={onShowClickables} />
+        <AchievementsListButton />
+        <ClickablesListButton />
       </Buttons>
       <Title level={2}>{clicks}</Title>
       <Buttons>
-        <IconButton icon={faCog} onClick={onShowSettings} />
+        <SettingsButton />
       </Buttons>
     </Bar>
   );
