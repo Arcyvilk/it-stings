@@ -708,7 +708,7 @@ export const stories: Story[] = [
   },
   {
     clicks: 6870,
-    text: ' Young steams can be eaten as a vegetable either cooked or raw, while the fruits are edible and sweet.',
+    text: 'Young steams can be eaten as a vegetable either cooked or raw, while the fruits are edible and sweet.',
     id: '4d233476-9d55-489c-baa2-780bbddf9203',
   },
   {
