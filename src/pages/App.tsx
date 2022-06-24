@@ -6,30 +6,38 @@ import {
   Redirect,
 } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-
-import { useAppContext } from 'shared/context';
-import StoryMode from 'pages/StoryMode';
-
 import 'react-toastify/dist/ReactToastify.css';
 
+import { useAppContext } from 'shared/context';
+import { MainWrapper } from 'containers';
+
+import MainGame from 'pages/MainGame';
+import StoryMode from 'pages/StoryMode';
+
 export default function App(): JSX.Element {
-  const { themeType } = useAppContext();
+  const { theme, themeType } = useAppContext();
+
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/it-stings">
-          <StoryMode />
-          <ToastContainer
-            theme={themeType}
-            autoClose={3000}
-            hideProgressBar={false}
-            pauseOnFocusLoss={false}
-          />
-        </Route>
-        <Route>
-          <Redirect to="/it-stings" />
-        </Route>
-      </Switch>
-    </Router>
+    <MainWrapper theme={theme}>
+      <ToastContainer
+        theme={themeType}
+        autoClose={3000}
+        hideProgressBar={false}
+        pauseOnFocusLoss={false}
+      />
+      <Router>
+        <Switch>
+          <Route exact path="/it-stings">
+            <MainGame />
+          </Route>
+          <Route exact path="/it-stings/story">
+            <StoryMode />
+          </Route>
+          <Route>
+            <Redirect to="/it-stings" />
+          </Route>
+        </Switch>
+      </Router>
+    </MainWrapper>
   );
 }
