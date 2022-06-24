@@ -5,6 +5,6 @@ export * from './CactusStory';
 export * from './ClickablesList';
 export * from './MainWrapper';
 export * from './Settings';
-export * from './StatusBarGame';
-export * from './StatusBarStory';
+export * from './TopBarGame';
+export * from './TopBarStory';
 export * from './TrophyCabinet';

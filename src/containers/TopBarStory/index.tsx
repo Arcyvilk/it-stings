@@ -2,16 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Theme } from 'shared/theme';
-import { Flex } from 'components';
+import { Flex, Title } from 'components';
 import { useAppContext, useStoryModeContext } from 'shared/context';
-import { SettingsButton } from 'containers/ActionButtons';
+import {
+  AchievementsListButton,
+  ClickablesListButton,
+  SettingsButton,
+} from 'containers/ActionButtons';
 
-export const StatusBarGame = (): JSX.Element => {
+export const TopBarStory = (): JSX.Element => {
   const { theme } = useAppContext();
   const { clicks } = useStoryModeContext();
 
   return (
     <Bar align theme={theme}>
+      <Buttons>
+        <AchievementsListButton />
+        <ClickablesListButton />
+      </Buttons>
+      <Title level={2}>{clicks}</Title>
       <Buttons>
         <SettingsButton />
       </Buttons>
