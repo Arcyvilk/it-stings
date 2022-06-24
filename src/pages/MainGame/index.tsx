@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Settings, TopBarGame } from 'containers';
+import { Settings, TopBarGame, CactusTable } from 'containers';
 
 import { useAppContext } from 'shared/context';
 import { useHandleSaveGame } from 'hooks';
@@ -13,6 +13,7 @@ export default function MainGame(): JSX.Element {
     <>
       {showSettingsModal && <Settings />}
       <TopBarGame />
+      <CactusTable />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { defaultClickable, ActiveClickable } from 'data/clickables';
+import { defaultClickable, ActiveClickable } from 'data/story-mode/clickables';
 
 type StoryModeContextType = {
   clicks: number;

@@ -1,4 +1,2 @@
-export * from './achievements';
-export * from './clickables';
-export * from './sounds';
-export * from './story';
+export * from './main-game';
+export * from './story-mode';

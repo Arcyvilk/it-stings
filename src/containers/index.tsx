@@ -2,6 +2,7 @@ export * from './AchievementList';
 export * from './AchievementNotification';
 export * from './CactusButton';
 export * from './CactusStory';
+export * from './CactusTable';
 export * from './ClickablesList';
 export * from './MainWrapper';
 export * from './Settings';

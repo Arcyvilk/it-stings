@@ -1,8 +1,8 @@
-import { ouchSound } from 'assets/sounds/ouch';
-import { angryCatSound } from 'assets/sounds/angryCat';
+import { ouchSound } from 'assets/story-mode/sounds/ouch';
+import { angryCatSound } from 'assets/story-mode/sounds/angryCat';
 
 import { useAppContext, useStoryModeContext } from 'shared/context';
-import { Sounds } from 'data/clickables';
+import { Sounds } from 'data/story-mode/clickables';
 
 export const sounds = {
   ouch: ouchSound,
