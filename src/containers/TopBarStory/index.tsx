@@ -7,6 +7,7 @@ import { useAppContext, useStoryModeContext } from 'shared/context';
 import {
   AchievementsListButton,
   ClickablesListButton,
+  GameModeSwapButton,
   SettingsButton,
 } from 'containers/ActionButtons';
 
@@ -23,6 +24,7 @@ export const TopBarStory = (): JSX.Element => {
       <Title level={2}>{clicks}</Title>
       <Buttons>
         <SettingsButton />
+        <GameModeSwapButton />
       </Buttons>
     </Bar>
   );
