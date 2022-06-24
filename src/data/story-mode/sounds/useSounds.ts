@@ -42,7 +42,9 @@ export const useSounds = (): UseSounds => {
       return;
     }
     try {
-      const sound = await import(`assets/sounds/story/${storyId}.mp3`);
+      const sound = await import(
+        `assets/story-mode/sounds/narration/${storyId}.mp3`
+      );
       if (sound?.default) {
         new Audio(sound.default).play();
       }
